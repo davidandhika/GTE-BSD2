@@ -6,7 +6,7 @@
     End Sub
 
     Private Sub BtnReport_Click(sender As Object, e As EventArgs) Handles BtnReport.Click
-        FrmReport.Show()
+        'FrmReport.Show()
         Me.Hide()
     End Sub
 
@@ -16,7 +16,7 @@
     End Sub
 
     Private Sub opname_btn_Click(sender As Object, e As EventArgs) Handles opname_btn.Click
-        MasterOpname.Show()
+        'MasterOpname.Show()
         Me.Hide()
     End Sub
 End Class

@@ -17,18 +17,18 @@ Public Class Search
     Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         Dim barisdgv As Integer = e.RowIndex
         If barisdgv >= 0 Then
-            MasterOpname.kdbarang_txt.Text = DataGridView1.Item(0, barisdgv).Value
-            MasterOpname.tanggal_txt.Text = DataGridView1.Item(1, barisdgv).Value
-            MasterOpname.actual_txt.Text = DataGridView1.Item(2, barisdgv).Value
-            MasterOpname.Selisih_txt.Text = DataGridView1.Item(3, barisdgv).Value
+            'MasterOpname.kdbarang_txt.Text = DataGridView1.Item(0, barisdgv).Value
+            ' MasterOpname.tanggal_txt.Text = DataGridView1.Item(1, barisdgv).Value
+            ' MasterOpname.actual_txt.Text = DataGridView1.Item(2, barisdgv).Value
+            ' MasterOpname.Selisih_txt.Text = DataGridView1.Item(3, barisdgv).Value
         End If
         Me.Close()
-        MasterOpname.Show()
+        '  MasterOpname.Show()
     End Sub
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        MasterOpname.Show()
+        ' MasterOpname.Show()
     End Sub
 
     Private Sub Search_Opname_Load(sender As Object, e As EventArgs) Handles MyBase.Load

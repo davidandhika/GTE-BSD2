@@ -8,7 +8,7 @@
                 FrmMenuAwal.Show()
                 Me.Hide()
             Else
-                MainMenu_client.Show()
+                'MainMenu_client.Show()
                 Me.Hide()
             End If
         Else
