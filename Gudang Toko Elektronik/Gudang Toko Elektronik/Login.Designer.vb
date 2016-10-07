@@ -70,7 +70,7 @@ Partial Class Login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = CType(resources.GetObject("$this.BackgroundImage"), System.Drawing.Image)
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
-        Me.ClientSize = New System.Drawing.Size(298, 273)
+        Me.ClientSize = New System.Drawing.Size(298, 270)
         Me.Controls.Add(Me.username_txt)
         Me.Controls.Add(Me.pass_txt)
         Me.Controls.Add(Me.close_btn)

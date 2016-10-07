@@ -68,7 +68,7 @@
     <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\app\Andhika\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\ORACLE\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -96,6 +96,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Master\FrmType.designer.vb" />
+    <Compile Include="Master\FrmType.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Master\FrmBrowseRak.designer.vb">
       <DependentUpon>FrmBrowseRak.vb</DependentUpon>
     </Compile>
@@ -175,6 +179,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Master\FrmType.resx" />
     <EmbeddedResource Include="Master\FrmBrowseRak.resx">
       <DependentUpon>FrmBrowseRak.vb</DependentUpon>
     </EmbeddedResource>

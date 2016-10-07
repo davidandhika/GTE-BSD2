@@ -6,9 +6,7 @@ Module MKoneksi
         Try
             conn.Open()
 
-            'catatLog(id)
-            'sender.hide()
-            'Transaksi.Show()
+            
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

@@ -78,6 +78,7 @@ Partial Class FrmMenuAwal
         Me.Controls.Add(Me.close_btn)
         Me.Controls.Add(Me.BtnReport)
         Me.Controls.Add(Me.BtnMaster)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmMenuAwal"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form Menu Awal"
