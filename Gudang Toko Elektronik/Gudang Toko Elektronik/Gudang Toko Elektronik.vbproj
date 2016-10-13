@@ -72,6 +72,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
@@ -96,6 +97,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Master\FrmBrowseGudang.designer.vb">
+      <DependentUpon>FrmBrowseGudang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmBrowseGudang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Master\FrmBrowseRak.designer.vb">
       <DependentUpon>FrmBrowseRak.vb</DependentUpon>
     </Compile>
@@ -106,6 +113,12 @@
       <DependentUpon>FrmBrowseType.vb</DependentUpon>
     </Compile>
     <Compile Include="Master\FrmBrowseType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmGudang.designer.vb">
+      <DependentUpon>FrmGudang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmGudang.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Master\FrmRak.designer.vb">
@@ -187,11 +200,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Master\FrmBrowseGudang.resx">
+      <DependentUpon>FrmBrowseGudang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmBrowseRak.resx">
       <DependentUpon>FrmBrowseRak.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmBrowseType.resx">
       <DependentUpon>FrmBrowseType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmGudang.resx">
+      <DependentUpon>FrmGudang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmRak.resx">
       <DependentUpon>FrmRak.vb</DependentUpon>
@@ -392,9 +411,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\small_loginTitle.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

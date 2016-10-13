@@ -140,6 +140,7 @@ Partial Class FrmType
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.lblKodeType)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmType"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmType"

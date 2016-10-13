@@ -29,14 +29,13 @@ Partial Class FrmMenuAdministrator
         Me.BtnRak = New System.Windows.Forms.Button()
         Me.BtnGudang = New System.Windows.Forms.Button()
         Me.close_btn = New System.Windows.Forms.Button()
-        Me.BtnUser = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BtnBarang
         '
         Me.BtnBarang.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.button_barang
         Me.BtnBarang.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnBarang.Location = New System.Drawing.Point(271, 215)
+        Me.BtnBarang.Location = New System.Drawing.Point(351, 215)
         Me.BtnBarang.Name = "BtnBarang"
         Me.BtnBarang.Size = New System.Drawing.Size(100, 100)
         Me.BtnBarang.TabIndex = 6
@@ -46,7 +45,7 @@ Partial Class FrmMenuAdministrator
         '
         Me.BtnType.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.button_type
         Me.BtnType.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnType.Location = New System.Drawing.Point(113, 215)
+        Me.BtnType.Location = New System.Drawing.Point(197, 215)
         Me.BtnType.Name = "BtnType"
         Me.BtnType.Size = New System.Drawing.Size(100, 100)
         Me.BtnType.TabIndex = 5
@@ -91,17 +90,6 @@ Partial Class FrmMenuAdministrator
         Me.close_btn.TabIndex = 25
         Me.close_btn.UseVisualStyleBackColor = True
         '
-        'BtnUser
-        '
-        Me.BtnUser.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.button_user
-        Me.BtnUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.BtnUser.Location = New System.Drawing.Point(428, 215)
-        Me.BtnUser.Name = "BtnUser"
-        Me.BtnUser.Size = New System.Drawing.Size(100, 100)
-        Me.BtnUser.TabIndex = 7
-        Me.BtnUser.UseVisualStyleBackColor = True
-        Me.BtnUser.Visible = False
-        '
         'FrmMenuAdministrator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -112,7 +100,6 @@ Partial Class FrmMenuAdministrator
         Me.Controls.Add(Me.BtnBrand)
         Me.Controls.Add(Me.BtnRak)
         Me.Controls.Add(Me.BtnGudang)
-        Me.Controls.Add(Me.BtnUser)
         Me.Controls.Add(Me.BtnBarang)
         Me.Controls.Add(Me.BtnType)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -128,5 +115,4 @@ Partial Class FrmMenuAdministrator
     Friend WithEvents BtnRak As System.Windows.Forms.Button
     Friend WithEvents BtnGudang As System.Windows.Forms.Button
     Friend WithEvents close_btn As System.Windows.Forms.Button
-    Friend WithEvents BtnUser As System.Windows.Forms.Button
 End Class

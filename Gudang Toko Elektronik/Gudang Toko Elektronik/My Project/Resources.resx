@@ -118,29 +118,23 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="form master type2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form master type2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="form browse user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form browse user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="form master gudang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form master gudang1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="form browse gudang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form browse gudang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="form browse gudang2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form browse gudang2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="button type" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button type.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="form browse barang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form browse barang1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="form master type1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form master type1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="form master type2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form master type2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="form browse brand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form browse brand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="form master barang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form master barang1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="form browse gudang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form browse gudang1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="button report" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button report.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,26 +145,29 @@
   <data name="button master" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button master.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="form master rak1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form master rak1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="button rak" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\button rak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="button gudang" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button gudang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="form master rak" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form master rak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="form master gudang" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form master gudang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="button user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="form browse gudang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form browse gudang1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="form master gudang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form master gudang1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form browse rak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form browse rak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form master rak1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form master rak1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form master barang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form master barang1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="form browse gudang2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form browse gudang2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="form menu administrator" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form menu administrator.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,34 +178,34 @@
   <data name="form browse barang" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form browse barang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="button type" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\button type.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="form master gudang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form master gudang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="form browse rak" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form browse rak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="form browse gudang" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form browse gudang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="button rak" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\button rak.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="form master barang" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form master barang.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="form browse barang1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form browse barang1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="button brand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\button brand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="form master type" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\form master type.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="form master type1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form master type1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="form master brand" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form master brand.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="form master type" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\form master type.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="form master user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\form master user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="small_loginTitle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\small_loginTitle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

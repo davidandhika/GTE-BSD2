@@ -40,5 +40,15 @@ Public Class FrmBrowseType
             FrmType.txtNamaType.Text = DataGridView1.Item(1, barisdgv).Value
         End If
         Me.Close()
+        FrmType.Show()
+    End Sub
+
+    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
+        FrmType.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
     End Sub
 End Class
