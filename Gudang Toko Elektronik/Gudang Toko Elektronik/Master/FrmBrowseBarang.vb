@@ -48,10 +48,16 @@ Public Class FrmBrowseBarang
             FrmBarang.txtStok.Text = DataGridView1.Item(5, barisdgv).Value
         End If
         Me.Close()
+        FrmBarang.Show()
     End Sub
 
     Private Sub FrmBrowseBarang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         isiTable()
 
+    End Sub
+
+    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
+        Me.Close()
+        FrmBarang.Show()
     End Sub
 End Class

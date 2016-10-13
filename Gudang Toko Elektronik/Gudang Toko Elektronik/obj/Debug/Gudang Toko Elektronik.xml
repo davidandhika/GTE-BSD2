@@ -1,0 +1,144 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GudangTokoElektronik
+</name>
+</assembly>
+<members>
+<member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.button_barang">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.button_brand">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.button_gudang">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.button_master">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.button_rak">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.button_report">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.button_type">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.button_user">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_browse_barang">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_browse_barang1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_browse_brand">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_browse_gudang">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_browse_gudang1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_browse_gudang2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_browse_rak">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_browse_user">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_keluar">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_barang">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_barang1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_brand">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_gudang">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_gudang1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_rak">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_rak1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_type">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_type1">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_type2">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_master_user">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.form_menu_administrator">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Gudang_Toko_Elektronik.My.Resources.Resources.search">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Gudang_Toko_Elektronik.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

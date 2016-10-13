@@ -22,8 +22,10 @@ Partial Class FrmBrowseBarang
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmBrowseBarang))
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.close_btn = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -42,14 +44,25 @@ Partial Class FrmBrowseBarang
         Me.TextBox1.Size = New System.Drawing.Size(164, 20)
         Me.TextBox1.TabIndex = 2
         '
+        'close_btn
+        '
+        Me.close_btn.BackgroundImage = CType(resources.GetObject("close_btn.BackgroundImage"), System.Drawing.Image)
+        Me.close_btn.Location = New System.Drawing.Point(619, 2)
+        Me.close_btn.Name = "close_btn"
+        Me.close_btn.Size = New System.Drawing.Size(24, 24)
+        Me.close_btn.TabIndex = 25
+        Me.close_btn.UseVisualStyleBackColor = True
+        '
         'FrmBrowseBarang
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.form_browse_barang1
         Me.ClientSize = New System.Drawing.Size(645, 395)
+        Me.Controls.Add(Me.close_btn)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TextBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmBrowseBarang"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form Browse Barang"
@@ -60,4 +73,5 @@ Partial Class FrmBrowseBarang
     End Sub
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents close_btn As System.Windows.Forms.Button
 End Class

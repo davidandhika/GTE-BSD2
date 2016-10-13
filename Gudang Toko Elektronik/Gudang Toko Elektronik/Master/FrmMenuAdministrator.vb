@@ -1,6 +1,6 @@
 ﻿Public Class FrmMenuAdministrator
     Private Sub BtnType_Click(sender As Object, e As EventArgs) Handles BtnType.Click
-        'FrmType.Show()
+        FrmType.Show()
         Me.Hide()
     End Sub
 
@@ -9,13 +9,13 @@
         Me.Hide()
     End Sub
 
-    Private Sub BtnUser_Click(sender As Object, e As EventArgs) Handles BtnUser.Click
+    Private Sub BtnUser_Click(sender As Object, e As EventArgs)
         'FrmUser.Show()
         Me.Hide()
     End Sub
 
     Private Sub BtnGudang_Click_1(sender As Object, e As EventArgs) Handles BtnGudang.Click
-        'FrmGudang.Show()
+        FrmGudang.Show()
         Me.Hide()
     End Sub
 

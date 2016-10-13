@@ -209,6 +209,7 @@ Partial Class FrmBarang
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.txtNamaBarang)
         Me.Controls.Add(Me.lblKodeBarang)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmBarang"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmBarang"

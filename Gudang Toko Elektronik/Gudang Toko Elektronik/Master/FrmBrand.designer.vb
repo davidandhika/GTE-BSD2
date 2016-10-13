@@ -143,6 +143,7 @@ Partial Class FrmBrand
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.txtNamaBrand)
         Me.Controls.Add(Me.lblKodeBrand)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmBrand"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmBrand"
