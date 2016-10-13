@@ -1,0 +1,27 @@
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\bin\Debug\Gudang Toko Elektronik.exe.config
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Interop.CrystalPrintControlLib.dll
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Interop.CrystalReportsDTSAgentLib.dll
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Interop.CrystalReportsLocalConnectionMgrLib.dll
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang Toko Elektronik.vbproj.ResolveComReference.cache
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang Toko Elektronik.vbprojResolveAssemblyReference.cache
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.FrmBrowseRak.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.FrmRak.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.FrmMenuAdministrator.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.FrmMenuAwal.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.FrmBrand.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.FrmBrowseBrand.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.FrmBrowseBarang.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.FrmBarang.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.Login.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.Resources.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.Search.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang Toko Elektronik.vbproj.GenerateResource.Cache
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\bin\Debug\Gudang Toko Elektronik.exe
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\bin\Debug\Gudang Toko Elektronik.pdb
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\bin\Debug\Gudang Toko Elektronik.xml
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang Toko Elektronik.exe
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang Toko Elektronik.xml
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang Toko Elektronik.pdb
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.FrmBrowseType.resources
+C:\Users\Fransisca Maria\Documents\GitHub\GTE-BSD2\Gudang Toko Elektronik\Gudang Toko Elektronik\obj\Debug\Gudang_Toko_Elektronik.FrmType.resources
