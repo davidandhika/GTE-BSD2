@@ -156,6 +156,7 @@ Partial Class FrmRak
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnSave)
         Me.Controls.Add(Me.lblKodeRak)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmRak"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmRak"

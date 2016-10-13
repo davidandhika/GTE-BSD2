@@ -97,14 +97,28 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Master\FrmType.designer.vb" />
-    <Compile Include="Master\FrmType.vb">
+    <Compile Include="Master\FrmBrowseGudang.designer.vb">
+      <DependentUpon>FrmBrowseGudang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmBrowseGudang.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Master\FrmBrowseRak.designer.vb">
       <DependentUpon>FrmBrowseRak.vb</DependentUpon>
     </Compile>
     <Compile Include="Master\FrmBrowseRak.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmBrowseType.designer.vb">
+      <DependentUpon>FrmBrowseType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmBrowseType.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmGudang.designer.vb">
+      <DependentUpon>FrmGudang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmGudang.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Master\FrmRak.designer.vb">
@@ -156,6 +170,12 @@
       <DependentUpon>Login.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Master\FrmType.designer.vb">
+      <DependentUpon>FrmType.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmType.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="MKoneksi.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -180,9 +200,17 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Master\FrmType.resx" />
+    <EmbeddedResource Include="Master\FrmBrowseGudang.resx">
+      <DependentUpon>FrmBrowseGudang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmBrowseRak.resx">
       <DependentUpon>FrmBrowseRak.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmBrowseType.resx">
+      <DependentUpon>FrmBrowseType.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmGudang.resx">
+      <DependentUpon>FrmGudang.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmRak.resx">
       <DependentUpon>FrmRak.vb</DependentUpon>
@@ -207,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmType.resx">
+      <DependentUpon>FrmType.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
