@@ -40,5 +40,15 @@ Public Class FrmBrowseBrand
             FrmBrand.txtNamaBrand.Text = DataGridView1.Item(1, barisdgv).Value
         End If
         Me.Close()
+        FrmBrand.Show()
+    End Sub
+
+    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
+        Me.Close()
+        FrmBrand.Show()
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
     End Sub
 End Class
