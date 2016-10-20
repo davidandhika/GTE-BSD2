@@ -1,7 +1,7 @@
 ﻿Public Class Login
 
     Private Sub login_btn_Click(sender As Object, e As EventArgs) Handles login_btn.Click
-        koneksi("gudang", username_txt.Text, pass_txt.Text)
+        koneksi("orcl", username_txt.Text, pass_txt.Text)
         If conn.State = ConnectionState.Open Then
             MsgBox("Selamat Datang " & username_txt.Text & "!")
             If username_txt.Text = "david" Then
