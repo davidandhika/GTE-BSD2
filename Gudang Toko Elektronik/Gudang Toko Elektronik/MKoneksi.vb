@@ -1,4 +1,5 @@
-﻿Imports Oracle.DataAccess.Client
+﻿'Imports Oracle.DataAccess.Client
+Imports Oracle.DataAccess.Client
 Module MKoneksi
     Public conn As New OracleConnection()
     Sub koneksi(datasource As String, id As String, pass As String)
@@ -6,7 +7,7 @@ Module MKoneksi
         Try
             conn.Open()
 
-            
+
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try

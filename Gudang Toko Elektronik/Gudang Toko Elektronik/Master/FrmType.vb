@@ -20,7 +20,7 @@ Public Class FrmType
     End Sub
 
     Private Sub btnBrowse_Click(sender As Object, e As EventArgs) Handles btnBrowse.Click
-        FrmBrowseType.Show()
+        'FrmBrowseType.Show()
         Me.Hide()
     End Sub
 
