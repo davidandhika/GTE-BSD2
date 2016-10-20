@@ -245,13 +245,13 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
+
     <EmbeddedResource Include="My Project\licenses.licx" />
-=======
+
     <EmbeddedResource Include="Master\FrmType.resx">
       <DependentUpon>FrmType.vb</DependentUpon>
     </EmbeddedResource>
->>>>>>> origin/master
+
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
