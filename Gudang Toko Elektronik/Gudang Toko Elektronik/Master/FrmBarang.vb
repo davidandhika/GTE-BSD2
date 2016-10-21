@@ -46,27 +46,34 @@ Public Class FrmBarang
     End Sub
 
     Private Sub btnSave_Click(sender As Object, e As EventArgs) Handles btnSave.Click
-        Dim trans As OracleTransaction = conn.BeginTransaction
-        Dim cmd As New OracleCommand("INSERT INTO barang(kdbarang, nmbarang, spesifikasi, kdtype,kdbrand,stok) VALUES (:kdbarang, :nmbarang, :spesifikasi,:kdtype,:kdbrand,:stok)", conn)
+        If txtNamaBarang.Text = "" Or txtSpesifikasi.Text = "" Or txtKodeType.Text = "" Or txtKodeBrand.Text = "" Or txtStok.Text = "" Then
+            MsgBox("Masih ada data yang kosong")
+        Else
+            Dim trans As OracleTransaction = conn.BeginTransaction
+            Dim cmd As New OracleCommand("INSERT INTO barang(kdbarang, nmbarang, spesifikasi, kdtype,kdbrand,stok) VALUES (:kdbarang, :nmbarang, :spesifikasi,:kdtype,:kdbrand,:stok)", conn)
 
-        With cmd
-            .Parameters.Add(":kdbarang", lblKodeBarang.Text)
-            .Parameters.Add(":nmbarang", txtNamaBarang.Text)
-            .Parameters.Add(":spesifikasi", txtSpesifikasi.Text)
-            .Parameters.Add(":kdtype", txtKodeType.Text)
-            .Parameters.Add(":kdbrand", txtKodeBrand.Text)
-            .Parameters.Add(":stok", txtStok.Text)
-        End With
-        Try
-            cmd.ExecuteNonQuery()
-            trans.Commit()
+            With cmd
+                .Parameters.Add(":kdbarang", lblKodeBarang.Text)
+                .Parameters.Add(":nmbarang", txtNamaBarang.Text)
+                .Parameters.Add(":spesifikasi", txtSpesifikasi.Text)
+                .Parameters.Add(":kdtype", txtKodeType.Text)
+                .Parameters.Add(":kdbrand", txtKodeBrand.Text)
+                .Parameters.Add(":stok", txtStok.Text)
+            End With
+            Try
+                cmd.ExecuteNonQuery()
+                trans.Commit()
 
-            MsgBox("Data Berhasil Disimpan!")
-        Catch ex As Exception
-            MsgBox(ex.Message)
-            trans.Rollback()
-        End Try
-        start()
+                MsgBox("Data Berhasil Disimpan!")
+            Catch ex As Exception
+                MsgBox(ex.Message)
+                trans.Rollback()
+            End Try
+            start()
+
+
+        End If
+        
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
