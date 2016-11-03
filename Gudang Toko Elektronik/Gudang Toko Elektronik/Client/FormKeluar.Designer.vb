@@ -93,7 +93,7 @@ Partial Class FormKeluar
         'close_btn
         '
         Me.close_btn.BackgroundImage = CType(resources.GetObject("close_btn.BackgroundImage"), System.Drawing.Image)
-        Me.close_btn.Location = New System.Drawing.Point(613, 52)
+        Me.close_btn.Location = New System.Drawing.Point(615, 1)
         Me.close_btn.Name = "close_btn"
         Me.close_btn.Size = New System.Drawing.Size(24, 24)
         Me.close_btn.TabIndex = 74
@@ -206,7 +206,7 @@ Partial Class FormKeluar
         Me.tgl_lbl.BackColor = System.Drawing.Color.Transparent
         Me.tgl_lbl.Font = New System.Drawing.Font("Berlin Sans FB", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.tgl_lbl.ForeColor = System.Drawing.Color.White
-        Me.tgl_lbl.Location = New System.Drawing.Point(546, 54)
+        Me.tgl_lbl.Location = New System.Drawing.Point(569, 58)
         Me.tgl_lbl.Name = "tgl_lbl"
         Me.tgl_lbl.Size = New System.Drawing.Size(61, 18)
         Me.tgl_lbl.TabIndex = 63

@@ -33,7 +33,7 @@ Partial Class Search_FormKeluar
         'close_btn
         '
         Me.close_btn.BackgroundImage = CType(resources.GetObject("close_btn.BackgroundImage"), System.Drawing.Image)
-        Me.close_btn.Location = New System.Drawing.Point(565, 50)
+        Me.close_btn.Location = New System.Drawing.Point(575, 1)
         Me.close_btn.Name = "close_btn"
         Me.close_btn.Size = New System.Drawing.Size(24, 24)
         Me.close_btn.TabIndex = 10

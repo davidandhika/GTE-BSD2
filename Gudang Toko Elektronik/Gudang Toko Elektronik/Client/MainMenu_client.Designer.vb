@@ -73,7 +73,7 @@ Partial Class MainMenu_client
         'close_btn
         '
         Me.close_btn.BackgroundImage = CType(resources.GetObject("close_btn.BackgroundImage"), System.Drawing.Image)
-        Me.close_btn.Location = New System.Drawing.Point(577, 66)
+        Me.close_btn.Location = New System.Drawing.Point(590, -1)
         Me.close_btn.Name = "close_btn"
         Me.close_btn.Size = New System.Drawing.Size(24, 24)
         Me.close_btn.TabIndex = 8

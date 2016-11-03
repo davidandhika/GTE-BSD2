@@ -117,7 +117,7 @@ Partial Class Opname
         'close_btn
         '
         Me.close_btn.BackgroundImage = CType(resources.GetObject("close_btn.BackgroundImage"), System.Drawing.Image)
-        Me.close_btn.Location = New System.Drawing.Point(583, 61)
+        Me.close_btn.Location = New System.Drawing.Point(589, 2)
         Me.close_btn.Name = "close_btn"
         Me.close_btn.Size = New System.Drawing.Size(24, 24)
         Me.close_btn.TabIndex = 37
@@ -157,7 +157,7 @@ Partial Class Opname
         Me.validity_btn.TabIndex = 33
         Me.validity_btn.UseVisualStyleBackColor = True
         '
-        'MasterOpname
+        'Opname
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -176,7 +176,7 @@ Partial Class Opname
         Me.Controls.Add(Me.kdbarang_txt)
         Me.Controls.Add(Me.validity_btn)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "MasterOpname"
+        Me.Name = "Opname"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Opname"
         Me.ResumeLayout(False)
