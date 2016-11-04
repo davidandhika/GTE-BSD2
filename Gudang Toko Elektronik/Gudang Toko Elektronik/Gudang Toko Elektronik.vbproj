@@ -209,10 +209,10 @@
     <Compile Include="Master\FrmType.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\MasterOpname.Designer.vb">
+    <Compile Include="Client\MasterOpname.Designer.vb">
       <DependentUpon>MasterOpname.vb</DependentUpon>
     </Compile>
-    <Compile Include="Master\MasterOpname.vb">
+    <Compile Include="Client\MasterOpname.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MKoneksi.vb" />
@@ -231,10 +231,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Master\Search.Designer.vb">
+    <Compile Include="Client\Search.Designer.vb">
       <DependentUpon>Search.vb</DependentUpon>
     </Compile>
-    <Compile Include="Master\Search.vb">
+    <Compile Include="Client\Search.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -284,7 +284,7 @@
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master\MasterOpname.resx">
+    <EmbeddedResource Include="Client\MasterOpname.resx">
       <DependentUpon>MasterOpname.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
@@ -297,7 +297,7 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master\Search.resx">
+    <EmbeddedResource Include="Client\Search.resx">
       <DependentUpon>Search.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

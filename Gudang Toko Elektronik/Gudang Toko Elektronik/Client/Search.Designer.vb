@@ -61,13 +61,13 @@ Partial Class Search
         'close_btn
         '
         Me.close_btn.BackgroundImage = CType(resources.GetObject("close_btn.BackgroundImage"), System.Drawing.Image)
-        Me.close_btn.Location = New System.Drawing.Point(577, 48)
+        Me.close_btn.Location = New System.Drawing.Point(588, 0)
         Me.close_btn.Name = "close_btn"
         Me.close_btn.Size = New System.Drawing.Size(24, 24)
         Me.close_btn.TabIndex = 4
         Me.close_btn.UseVisualStyleBackColor = True
         '
-        'Search_Opname
+        'Search
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -79,7 +79,7 @@ Partial Class Search
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.TextBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Search_Opname"
+        Me.Name = "Search"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Search_Opname"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()

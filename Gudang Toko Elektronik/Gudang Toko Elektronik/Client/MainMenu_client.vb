@@ -6,7 +6,7 @@
     End Sub
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
-        Me.Close()
+        Me.Hide()
         conn.Close()
         Login.username_txt.Text = ""
         Login.pass_txt.Text = ""

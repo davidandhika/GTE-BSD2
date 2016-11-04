@@ -11,12 +11,13 @@
     End Sub
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
+        conn.Close()
         Me.Close()
         Login.Show()
     End Sub
 
-    Private Sub opname_btn_Click(sender As Object, e As EventArgs) Handles opname_btn.Click
-        'MasterOpname.Show()
+    Private Sub opname_btn_Click(sender As Object, e As EventArgs)
+        Opname.Show()
         Me.Hide()
     End Sub
 End Class

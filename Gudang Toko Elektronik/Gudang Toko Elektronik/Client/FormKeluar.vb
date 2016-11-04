@@ -1,7 +1,6 @@
 ﻿Imports Oracle.DataAccess.Client
 Public Class FormKeluar
-
-    Dim ds As New DsLengkap
+    Dim ds As New Dslengkap
     Dim da As OracleDataAdapter
     Dim selectedindex As Integer
     Dim dr As OracleDataReader

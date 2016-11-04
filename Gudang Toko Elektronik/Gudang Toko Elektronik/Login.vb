@@ -1,19 +1,22 @@
 ﻿Public Class Login
 
     Private Sub login_btn_Click(sender As Object, e As EventArgs) Handles login_btn.Click
-        koneksi("xe", username_txt.Text, pass_txt.Text)
-        If conn.State = ConnectionState.Open Then
-            MsgBox("Selamat Datang " & username_txt.Text & "!")
-            If username_txt.Text = "david" Then
-                FrmMenuAwal.Show()
-                'MainMenu_client.Show()
-                Me.Hide()
-            Else
-                'MainMenu_client.Show()
-                Me.Hide()
-            End If
+        If username_txt.Text = "" Or pass_txt.Text = "" Then
+            MsgBox("User atau Password Tidak boleh Kosong!")
         Else
-            MsgBox("Belum berhasil masuk")
+            koneksi("xe", username_txt.Text, pass_txt.Text)
+            If conn.State = ConnectionState.Open Then
+                MsgBox("Selamat Datang " & username_txt.Text & "!")
+                If username_txt.Text = "david" Then
+                    FrmMenuAwal.Show()
+                    Me.Hide()
+                Else
+                    MainMenu_client.Show()
+                    Me.Hide()
+                End If
+            Else
+                MsgBox("Belum berhasil masuk")
+            End If
         End If
     End Sub
 
