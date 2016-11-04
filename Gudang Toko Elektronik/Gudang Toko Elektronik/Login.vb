@@ -4,7 +4,7 @@
         If username_txt.Text = "" Or pass_txt.Text = "" Then
             MsgBox("User atau Password Tidak boleh Kosong!")
         Else
-            koneksi("xe", username_txt.Text, pass_txt.Text)
+            koneksi("orcl", username_txt.Text, pass_txt.Text)
             If conn.State = ConnectionState.Open Then
                 MsgBox("Selamat Datang " & username_txt.Text & "!")
                 If username_txt.Text = "david" Then
