@@ -130,6 +130,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Dslengkap.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Laporan\FrmRptOpname.Designer.vb">
+      <DependentUpon>FrmRptOpname.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\FrmRptOpname.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\rptOpname.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptOpname.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Master\FrmBrowseGudang.designer.vb">
       <DependentUpon>FrmBrowseGudang.vb</DependentUpon>
     </Compile>
@@ -247,6 +259,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Client\Search_FormKeluar.resx">
       <DependentUpon>Search_FormKeluar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\FrmRptOpname.resx">
+      <DependentUpon>FrmRptOpname.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\rptOpname.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptOpname.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmBrowseGudang.resx">
       <DependentUpon>FrmBrowseGudang.vb</DependentUpon>
