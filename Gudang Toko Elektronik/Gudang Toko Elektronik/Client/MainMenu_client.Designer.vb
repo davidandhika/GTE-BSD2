@@ -23,28 +23,19 @@ Partial Class MainMenu_client
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainMenu_client))
-        Me.report_btn = New System.Windows.Forms.Button()
         Me.opname_btn = New System.Windows.Forms.Button()
         Me.out_btn = New System.Windows.Forms.Button()
         Me.in_btn = New System.Windows.Forms.Button()
         Me.close_btn = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.btnCetakSJ = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'report_btn
-        '
-        Me.report_btn.BackgroundImage = CType(resources.GetObject("report_btn.BackgroundImage"), System.Drawing.Image)
-        Me.report_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.report_btn.Location = New System.Drawing.Point(462, 121)
-        Me.report_btn.Name = "report_btn"
-        Me.report_btn.Size = New System.Drawing.Size(100, 100)
-        Me.report_btn.TabIndex = 7
-        Me.report_btn.UseVisualStyleBackColor = True
         '
         'opname_btn
         '
         Me.opname_btn.BackgroundImage = CType(resources.GetObject("opname_btn.BackgroundImage"), System.Drawing.Image)
         Me.opname_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.opname_btn.Location = New System.Drawing.Point(329, 121)
+        Me.opname_btn.Location = New System.Drawing.Point(329, 114)
         Me.opname_btn.Name = "opname_btn"
         Me.opname_btn.Size = New System.Drawing.Size(100, 100)
         Me.opname_btn.TabIndex = 6
@@ -54,7 +45,7 @@ Partial Class MainMenu_client
         '
         Me.out_btn.BackgroundImage = CType(resources.GetObject("out_btn.BackgroundImage"), System.Drawing.Image)
         Me.out_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.out_btn.Location = New System.Drawing.Point(194, 121)
+        Me.out_btn.Location = New System.Drawing.Point(194, 114)
         Me.out_btn.Name = "out_btn"
         Me.out_btn.Size = New System.Drawing.Size(100, 100)
         Me.out_btn.TabIndex = 5
@@ -64,7 +55,7 @@ Partial Class MainMenu_client
         '
         Me.in_btn.BackgroundImage = CType(resources.GetObject("in_btn.BackgroundImage"), System.Drawing.Image)
         Me.in_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.in_btn.Location = New System.Drawing.Point(53, 121)
+        Me.in_btn.Location = New System.Drawing.Point(53, 114)
         Me.in_btn.Name = "in_btn"
         Me.in_btn.Size = New System.Drawing.Size(100, 100)
         Me.in_btn.TabIndex = 4
@@ -79,14 +70,36 @@ Partial Class MainMenu_client
         Me.close_btn.TabIndex = 8
         Me.close_btn.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.Label1.Location = New System.Drawing.Point(466, 189)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(91, 15)
+        Me.Label1.TabIndex = 12
+        Me.Label1.Text = "SURAT JALAN"
+        '
+        'btnCetakSJ
+        '
+        Me.btnCetakSJ.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.button_report
+        Me.btnCetakSJ.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnCetakSJ.Location = New System.Drawing.Point(462, 114)
+        Me.btnCetakSJ.Name = "btnCetakSJ"
+        Me.btnCetakSJ.Size = New System.Drawing.Size(100, 100)
+        Me.btnCetakSJ.TabIndex = 11
+        Me.btnCetakSJ.UseVisualStyleBackColor = True
+        '
         'MainMenu_client
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.MainMenuClient
         Me.ClientSize = New System.Drawing.Size(613, 319)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.btnCetakSJ)
         Me.Controls.Add(Me.close_btn)
-        Me.Controls.Add(Me.report_btn)
         Me.Controls.Add(Me.opname_btn)
         Me.Controls.Add(Me.out_btn)
         Me.Controls.Add(Me.in_btn)
@@ -97,9 +110,10 @@ Partial Class MainMenu_client
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents report_btn As System.Windows.Forms.Button
     Friend WithEvents opname_btn As System.Windows.Forms.Button
     Friend WithEvents out_btn As System.Windows.Forms.Button
     Friend WithEvents in_btn As System.Windows.Forms.Button
     Friend WithEvents close_btn As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents btnCetakSJ As System.Windows.Forms.Button
 End Class

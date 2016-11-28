@@ -29,7 +29,7 @@
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x86</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <DefineDebug>true</DefineDebug>
@@ -107,10 +107,27 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Client\DataSetSJ.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSJ.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormCetakSuratJalan.designer.vb">
+      <DependentUpon>FormCetakSuratJalan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormCetakSuratJalan.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Client\FormKeluar.Designer.vb">
       <DependentUpon>FormKeluar.vb</DependentUpon>
     </Compile>
     <Compile Include="Client\FormKeluar.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client\FormMasuk.Designer.vb">
+      <DependentUpon>FormMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormMasuk.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Client\MainMenu_client.Designer.vb">
@@ -125,10 +142,22 @@
     <Compile Include="Client\Search_FormKeluar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Client\Search_Masuk.Designer.vb">
+      <DependentUpon>Search_Masuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Client\Search_Masuk.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dslengkap.Designer.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Dslengkap.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\rptSuratJalan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSuratJalan.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Laporan\FrmRptOpname.Designer.vb">
       <DependentUpon>FrmRptOpname.vb</DependentUpon>
@@ -141,6 +170,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>rptOpname.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\FrmRptSuratJalan.designer.vb">
+      <DependentUpon>FrmRptSuratJalan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\FrmRptSuratJalan.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Master\FrmBrowseGudang.designer.vb">
       <DependentUpon>FrmBrowseGudang.vb</DependentUpon>
@@ -251,8 +286,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Client\FormCetakSuratJalan.resx">
+      <DependentUpon>FormCetakSuratJalan.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Client\FormKeluar.resx">
       <DependentUpon>FormKeluar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormMasuk.resx">
+      <DependentUpon>FormMasuk.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Client\MainMenu_client.resx">
       <DependentUpon>MainMenu_client.vb</DependentUpon>
@@ -260,12 +301,22 @@
     <EmbeddedResource Include="Client\Search_FormKeluar.resx">
       <DependentUpon>Search_FormKeluar.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Client\Search_Masuk.resx">
+      <DependentUpon>Search_Masuk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\rptSuratJalan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSuratJalan.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Laporan\FrmRptOpname.resx">
       <DependentUpon>FrmRptOpname.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\rptOpname.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptOpname.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\FrmRptSuratJalan.resx">
+      <DependentUpon>FrmRptSuratJalan.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmBrowseGudang.resx">
       <DependentUpon>FrmBrowseGudang.vb</DependentUpon>
@@ -321,6 +372,17 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Client\DataSetSJ.xsc">
+      <DependentUpon>DataSetSJ.xsd</DependentUpon>
+    </None>
+    <None Include="Client\DataSetSJ.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSJ.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Client\DataSetSJ.xss">
+      <DependentUpon>DataSetSJ.xsd</DependentUpon>
+    </None>
     <None Include="Dslengkap.xsc">
       <DependentUpon>Dslengkap.xsd</DependentUpon>
     </None>

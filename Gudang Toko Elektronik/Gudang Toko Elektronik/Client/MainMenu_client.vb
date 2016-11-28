@@ -19,15 +19,22 @@
     End Sub
 
     Private Sub in_btn_Click(sender As Object, e As EventArgs) Handles in_btn.Click
-        ' FormMasuk.Show()
+        FormMasuk.Show()
         Me.Hide()
     End Sub
 
-    Private Sub report_btn_Click(sender As Object, e As EventArgs) Handles report_btn.Click
+    Private Sub report_btn_Click(sender As Object, e As EventArgs)
 
     End Sub
 
     Private Sub MainMenu_client_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub btnCetakSJ_Click(sender As Object, e As EventArgs) Handles btnCetakSJ.Click
+        FormCetakSuratJalan.Show()
+        Me.Hide()
+
 
     End Sub
 End Class

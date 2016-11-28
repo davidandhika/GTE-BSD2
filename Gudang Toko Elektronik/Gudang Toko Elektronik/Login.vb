@@ -7,7 +7,7 @@
             koneksi("orcl", username_txt.Text, pass_txt.Text)
             If conn.State = ConnectionState.Open Then
                 MsgBox("Selamat Datang " & username_txt.Text & "!")
-                If username_txt.Text = "david" Then
+                If username_txt.Text = "david" Or username_txt.Text = "DAVID" Then
                     FrmMenuAwal.Show()
                     Me.Hide()
                 Else
