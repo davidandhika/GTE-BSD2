@@ -1,6 +1,6 @@
 ﻿Imports Oracle.DataAccess.Client
 Public Class FormCetakSuratJalan
-    Dim ds As New DataSet
+    Dim ds As New DataSetSJ
     Dim da As OracleDataAdapter
     Dim selectedindex As Integer
     Dim dr As OracleDataReader
@@ -101,14 +101,14 @@ Public Class FormCetakSuratJalan
         tgl_lbl.Text = String.Format("{0:dd/MM/yy}", DateTime.Now)
 
 
-        With DataGridView2
-            .Columns.Add("kodesk", "No. SK")
-            .Columns.Add("nama", "Nama Barang")
-            .Columns.Add("jumlah", "Jumlah")
-            .Columns(0).Width = 100
-            .Columns(1).Width = 350
-            .Columns(2).Width = 100
-        End With
+        'With DataGridView2
+        '    .Columns.Add("kodesk", "No. SK")
+        '    .Columns.Add("nama", "Nama Barang")
+        '    .Columns.Add("jumlah", "Jumlah")
+        '    .Columns(0).Width = 100
+        '    .Columns(1).Width = 350
+        '    .Columns(2).Width = 100
+        'End With
 
         'Try
         '    Dim cmd As New OracleCommand("select * from S_DETAIL_KELUAR", conn)
@@ -123,13 +123,49 @@ Public Class FormCetakSuratJalan
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
         FrmRptSuratJalan.Show()
+        ' ds.Clear()
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        Dim dt As DataSetSJ.dtSJDataTable = DataSetSJ.dtSJ
+        Dim dr As DataSetSJ.dtSJRow = dt.NewRow
+        dr.kodesk = noTransKeluar_txt.Text
+        dr.nama = txtNamaBarang.Text
+        dr.jumlah = txtJumlah.Text
+        dt.Rows.Add(dr)
 
 
-        DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("kodesk").Value = noTransKeluar_txt.Text()
-        DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("nama").Value = txtNamaBarang.Text()
-        DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("jumlah").Value = txtJumlah.Text()
+        'Dim dt As Dslengkap.detail_keluarDataTable = Dslengkap.detail_keluar
+        'Dim dr As Dslengkap.detail_keluarRow = dt.NewRow
+        'dr.kdtranskeluar = noSuratJalan_txt.Text
+        'dr.kdbarang = kdbarang_txt.Text
+        'dr.kondisi = kondisi_cb.Text
+        'dr.jumlah = jumlah_txt.Value
+
+        'dt.Rows.Add(dr)
+
+        'With DataGridView2
+        '    .Columns.Add("kodesk", "No. SK")
+        '    .Columns.Add("nama", "Nama Barang")
+        '    .Columns.Add("jumlah", "Jumlah")
+
+        'End With
+
+        'DataGridView2.Rows.Add()
+        'With DataGridView2.Rows(DataGridView2.RowCount - 1)
+        '    .Cells("kodesk").Value = noTransKeluar_txt.Text
+        '    .Cells("nama").Value = txtNamaBarang.Text
+        '    .Cells("jumlah").Value = txtJumlah.Text
+        'End With
+        'DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("kodesk").Value = noTransKeluar_txt.Text
+        'DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("nama").Value = txtNamaBarang.Text
+        'DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("jumlah").Value = txtJumlah.Text
+
+        'DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("kodesk").Value = noTransKeluar_txt.Text()
+        'DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("nama").Value = txtNamaBarang.Text()
+        'DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("jumlah").Value = txtJumlah.Text()
     End Sub
+
+
+
 End Class

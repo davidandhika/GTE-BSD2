@@ -38,11 +38,28 @@ Partial Class FormCetakSuratJalan
         Me.txtJumlah = New System.Windows.Forms.TextBox()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.DataGridView2 = New System.Windows.Forms.DataGridView()
+        Me.SuratjalanBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Dslengkap2 = New Gudang_Toko_Elektronik.Dslengkap()
+        Me.SuratjalanBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Dslengkap1 = New Gudang_Toko_Elektronik.Dslengkap()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.DataSetSJ = New Gudang_Toko_Elektronik.DataSetSJ()
+        Me.DataSetSJBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.DtSJBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.KodeskDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JumlahDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DetailkeluarBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SuratjalanBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dslengkap2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SuratjalanBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dslengkap1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSetSJ, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataSetSJBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DtSJBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'close_btn
@@ -162,11 +179,35 @@ Partial Class FormCetakSuratJalan
         '
         'DataGridView2
         '
+        Me.DataGridView2.AllowUserToAddRows = False
+        Me.DataGridView2.AutoGenerateColumns = False
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView2.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.KodeskDataGridViewTextBoxColumn, Me.NamaDataGridViewTextBoxColumn, Me.JumlahDataGridViewTextBoxColumn})
+        Me.DataGridView2.DataSource = Me.DtSJBindingSource
         Me.DataGridView2.Location = New System.Drawing.Point(16, 274)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.Size = New System.Drawing.Size(614, 111)
         Me.DataGridView2.TabIndex = 82
+        '
+        'SuratjalanBindingSource1
+        '
+        Me.SuratjalanBindingSource1.DataMember = "surat_jalan"
+        Me.SuratjalanBindingSource1.DataSource = Me.Dslengkap2
+        '
+        'Dslengkap2
+        '
+        Me.Dslengkap2.DataSetName = "Dslengkap"
+        Me.Dslengkap2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'SuratjalanBindingSource
+        '
+        Me.SuratjalanBindingSource.DataMember = "surat_jalan"
+        Me.SuratjalanBindingSource.DataSource = Me.Dslengkap1
+        '
+        'Dslengkap1
+        '
+        Me.Dslengkap1.DataSetName = "Dslengkap"
+        Me.Dslengkap1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'Label3
         '
@@ -179,6 +220,40 @@ Partial Class FormCetakSuratJalan
         Me.Label3.TabIndex = 83
         Me.Label3.Text = "PRINT"
         Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
+        'DataSetSJ
+        '
+        Me.DataSetSJ.DataSetName = "DataSetSJ"
+        Me.DataSetSJ.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'DataSetSJBindingSource
+        '
+        Me.DataSetSJBindingSource.DataSource = Me.DataSetSJ
+        Me.DataSetSJBindingSource.Position = 0
+        '
+        'DtSJBindingSource
+        '
+        Me.DtSJBindingSource.DataMember = "dtSJ"
+        Me.DtSJBindingSource.DataSource = Me.DataSetSJBindingSource
+        '
+        'KodeskDataGridViewTextBoxColumn
+        '
+        Me.KodeskDataGridViewTextBoxColumn.DataPropertyName = "kodesk"
+        Me.KodeskDataGridViewTextBoxColumn.HeaderText = "No. SK"
+        Me.KodeskDataGridViewTextBoxColumn.Name = "KodeskDataGridViewTextBoxColumn"
+        '
+        'NamaDataGridViewTextBoxColumn
+        '
+        Me.NamaDataGridViewTextBoxColumn.DataPropertyName = "nama"
+        Me.NamaDataGridViewTextBoxColumn.HeaderText = "Nama Barang"
+        Me.NamaDataGridViewTextBoxColumn.Name = "NamaDataGridViewTextBoxColumn"
+        Me.NamaDataGridViewTextBoxColumn.Width = 350
+        '
+        'JumlahDataGridViewTextBoxColumn
+        '
+        Me.JumlahDataGridViewTextBoxColumn.DataPropertyName = "jumlah"
+        Me.JumlahDataGridViewTextBoxColumn.HeaderText = "Jumlah"
+        Me.JumlahDataGridViewTextBoxColumn.Name = "JumlahDataGridViewTextBoxColumn"
         '
         'FormCetakSuratJalan
         '
@@ -208,6 +283,13 @@ Partial Class FormCetakSuratJalan
         CType(Me.DetailkeluarBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SuratjalanBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dslengkap2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SuratjalanBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dslengkap1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSetSJ, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataSetSJBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DtSJBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -227,4 +309,14 @@ Partial Class FormCetakSuratJalan
     Friend WithEvents btnAdd As System.Windows.Forms.Button
     Friend WithEvents DataGridView2 As System.Windows.Forms.DataGridView
     Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents SuratjalanBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Dslengkap1 As Gudang_Toko_Elektronik.Dslengkap
+    Friend WithEvents SuratjalanBindingSource1 As System.Windows.Forms.BindingSource
+    Friend WithEvents Dslengkap2 As Gudang_Toko_Elektronik.Dslengkap
+    Friend WithEvents DtSJBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DataSetSJBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents DataSetSJ As Gudang_Toko_Elektronik.DataSetSJ
+    Friend WithEvents KodeskDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NamaDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents JumlahDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
