@@ -32,7 +32,8 @@ Partial Class FormKeluar
         Me.delete_btn = New System.Windows.Forms.Button()
         Me.save_btn = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.NamaBarang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DetailkeluarBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Dslengkap = New Gudang_Toko_Elektronik.Dslengkap()
         Me.noSuratJalan_txt = New System.Windows.Forms.TextBox()
         Me.kondisi_cb = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -46,12 +47,15 @@ Partial Class FormKeluar
         Me.search_btn = New System.Windows.Forms.Button()
         Me.kdbarang_txt = New System.Windows.Forms.TextBox()
         Me.insert_btn = New System.Windows.Forms.Button()
-        Me.Dslengkap = New Gudang_Toko_Elektronik.Dslengkap()
-        Me.DetailkeluarBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.KdtranskeluarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.KdbarangDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaBarang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JumlahDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.KondisiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.jumlah_txt, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DetailkeluarBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.jumlah_txt, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtKodeGudang
@@ -113,7 +117,7 @@ Partial Class FormKeluar
         '
         Me.save_btn.BackgroundImage = CType(resources.GetObject("save_btn.BackgroundImage"), System.Drawing.Image)
         Me.save_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.save_btn.Location = New System.Drawing.Point(505, 326)
+        Me.save_btn.Location = New System.Drawing.Point(378, 326)
         Me.save_btn.Name = "save_btn"
         Me.save_btn.Size = New System.Drawing.Size(132, 36)
         Me.save_btn.TabIndex = 72
@@ -122,17 +126,24 @@ Partial Class FormKeluar
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.NamaBarang})
+        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.KdtranskeluarDataGridViewTextBoxColumn, Me.KdbarangDataGridViewTextBoxColumn, Me.NamaBarang, Me.JumlahDataGridViewTextBoxColumn, Me.KondisiDataGridViewTextBoxColumn})
+        Me.DataGridView1.DataSource = Me.DetailkeluarBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(316, 149)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(321, 171)
         Me.DataGridView1.TabIndex = 71
         '
-        'NamaBarang
+        'DetailkeluarBindingSource
         '
-        Me.NamaBarang.HeaderText = "Nama Barang"
-        Me.NamaBarang.Name = "NamaBarang"
+        Me.DetailkeluarBindingSource.DataMember = "detail_keluar"
+        Me.DetailkeluarBindingSource.DataSource = Me.Dslengkap
+        '
+        'Dslengkap
+        '
+        Me.Dslengkap.DataSetName = "Dslengkap"
+        Me.Dslengkap.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'noSuratJalan_txt
         '
@@ -263,15 +274,34 @@ Partial Class FormKeluar
         Me.insert_btn.TabIndex = 58
         Me.insert_btn.UseVisualStyleBackColor = True
         '
-        'Dslengkap
+        'KdtranskeluarDataGridViewTextBoxColumn
         '
-        Me.Dslengkap.DataSetName = "Dslengkap"
-        Me.Dslengkap.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.KdtranskeluarDataGridViewTextBoxColumn.DataPropertyName = "kdtranskeluar"
+        Me.KdtranskeluarDataGridViewTextBoxColumn.HeaderText = "kdtranskeluar"
+        Me.KdtranskeluarDataGridViewTextBoxColumn.Name = "KdtranskeluarDataGridViewTextBoxColumn"
         '
-        'DetailkeluarBindingSource
+        'KdbarangDataGridViewTextBoxColumn
         '
-        Me.DetailkeluarBindingSource.DataMember = "detail_keluar"
-        Me.DetailkeluarBindingSource.DataSource = Me.Dslengkap
+        Me.KdbarangDataGridViewTextBoxColumn.DataPropertyName = "kdbarang"
+        Me.KdbarangDataGridViewTextBoxColumn.HeaderText = "kdbarang"
+        Me.KdbarangDataGridViewTextBoxColumn.Name = "KdbarangDataGridViewTextBoxColumn"
+        '
+        'NamaBarang
+        '
+        Me.NamaBarang.HeaderText = "Nama Barang"
+        Me.NamaBarang.Name = "NamaBarang"
+        '
+        'JumlahDataGridViewTextBoxColumn
+        '
+        Me.JumlahDataGridViewTextBoxColumn.DataPropertyName = "jumlah"
+        Me.JumlahDataGridViewTextBoxColumn.HeaderText = "jumlah"
+        Me.JumlahDataGridViewTextBoxColumn.Name = "JumlahDataGridViewTextBoxColumn"
+        '
+        'KondisiDataGridViewTextBoxColumn
+        '
+        Me.KondisiDataGridViewTextBoxColumn.DataPropertyName = "kondisi"
+        Me.KondisiDataGridViewTextBoxColumn.HeaderText = "kondisi"
+        Me.KondisiDataGridViewTextBoxColumn.Name = "KondisiDataGridViewTextBoxColumn"
         '
         'FormKeluar
         '
@@ -306,9 +336,9 @@ Partial Class FormKeluar
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormKeluar"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.jumlah_txt, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DetailkeluarBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.jumlah_txt, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -321,7 +351,6 @@ Partial Class FormKeluar
     Friend WithEvents delete_btn As System.Windows.Forms.Button
     Friend WithEvents save_btn As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents NamaBarang As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents noSuratJalan_txt As System.Windows.Forms.TextBox
     Friend WithEvents kondisi_cb As System.Windows.Forms.ComboBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -337,4 +366,9 @@ Partial Class FormKeluar
     Friend WithEvents insert_btn As System.Windows.Forms.Button
     Friend WithEvents Dslengkap As Gudang_Toko_Elektronik.Dslengkap
     Friend WithEvents DetailkeluarBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents KdtranskeluarDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents KdbarangDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents NamaBarang As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents JumlahDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents KondisiDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
 End Class
