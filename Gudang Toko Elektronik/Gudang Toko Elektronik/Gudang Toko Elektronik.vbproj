@@ -183,6 +183,12 @@
     <Compile Include="Laporan\FrmRptSuratJalan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Laporan\rptTransKeluar.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTransKeluar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Master\FrmBrowseGudang.designer.vb">
       <DependentUpon>FrmBrowseGudang.vb</DependentUpon>
     </Compile>
@@ -327,6 +333,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\FrmRptSuratJalan.resx">
       <DependentUpon>FrmRptSuratJalan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\rptTransKeluar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTransKeluar.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmBrowseGudang.resx">
       <DependentUpon>FrmBrowseGudang.vb</DependentUpon>

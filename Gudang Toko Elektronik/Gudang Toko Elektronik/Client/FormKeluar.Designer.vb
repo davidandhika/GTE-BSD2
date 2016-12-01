@@ -32,6 +32,11 @@ Partial Class FormKeluar
         Me.delete_btn = New System.Windows.Forms.Button()
         Me.save_btn = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.KdtranskeluarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.KdbarangDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaBarang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JumlahDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.KondisiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DetailkeluarBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Dslengkap = New Gudang_Toko_Elektronik.Dslengkap()
         Me.noSuratJalan_txt = New System.Windows.Forms.TextBox()
@@ -47,11 +52,7 @@ Partial Class FormKeluar
         Me.search_btn = New System.Windows.Forms.Button()
         Me.kdbarang_txt = New System.Windows.Forms.TextBox()
         Me.insert_btn = New System.Windows.Forms.Button()
-        Me.KdtranskeluarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KdbarangDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NamaBarang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JumlahDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KondisiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.print_btn = New System.Windows.Forms.Button()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DetailkeluarBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -117,7 +118,7 @@ Partial Class FormKeluar
         '
         Me.save_btn.BackgroundImage = CType(resources.GetObject("save_btn.BackgroundImage"), System.Drawing.Image)
         Me.save_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.save_btn.Location = New System.Drawing.Point(378, 326)
+        Me.save_btn.Location = New System.Drawing.Point(354, 326)
         Me.save_btn.Name = "save_btn"
         Me.save_btn.Size = New System.Drawing.Size(132, 36)
         Me.save_btn.TabIndex = 72
@@ -134,6 +135,35 @@ Partial Class FormKeluar
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(321, 171)
         Me.DataGridView1.TabIndex = 71
+        '
+        'KdtranskeluarDataGridViewTextBoxColumn
+        '
+        Me.KdtranskeluarDataGridViewTextBoxColumn.DataPropertyName = "kdtranskeluar"
+        Me.KdtranskeluarDataGridViewTextBoxColumn.HeaderText = "kdtranskeluar"
+        Me.KdtranskeluarDataGridViewTextBoxColumn.Name = "KdtranskeluarDataGridViewTextBoxColumn"
+        '
+        'KdbarangDataGridViewTextBoxColumn
+        '
+        Me.KdbarangDataGridViewTextBoxColumn.DataPropertyName = "kdbarang"
+        Me.KdbarangDataGridViewTextBoxColumn.HeaderText = "kdbarang"
+        Me.KdbarangDataGridViewTextBoxColumn.Name = "KdbarangDataGridViewTextBoxColumn"
+        '
+        'NamaBarang
+        '
+        Me.NamaBarang.HeaderText = "Nama Barang"
+        Me.NamaBarang.Name = "NamaBarang"
+        '
+        'JumlahDataGridViewTextBoxColumn
+        '
+        Me.JumlahDataGridViewTextBoxColumn.DataPropertyName = "jumlah"
+        Me.JumlahDataGridViewTextBoxColumn.HeaderText = "jumlah"
+        Me.JumlahDataGridViewTextBoxColumn.Name = "JumlahDataGridViewTextBoxColumn"
+        '
+        'KondisiDataGridViewTextBoxColumn
+        '
+        Me.KondisiDataGridViewTextBoxColumn.DataPropertyName = "kondisi"
+        Me.KondisiDataGridViewTextBoxColumn.HeaderText = "kondisi"
+        Me.KondisiDataGridViewTextBoxColumn.Name = "KondisiDataGridViewTextBoxColumn"
         '
         'DetailkeluarBindingSource
         '
@@ -274,34 +304,18 @@ Partial Class FormKeluar
         Me.insert_btn.TabIndex = 58
         Me.insert_btn.UseVisualStyleBackColor = True
         '
-        'KdtranskeluarDataGridViewTextBoxColumn
+        'print_btn
         '
-        Me.KdtranskeluarDataGridViewTextBoxColumn.DataPropertyName = "kdtranskeluar"
-        Me.KdtranskeluarDataGridViewTextBoxColumn.HeaderText = "kdtranskeluar"
-        Me.KdtranskeluarDataGridViewTextBoxColumn.Name = "KdtranskeluarDataGridViewTextBoxColumn"
-        '
-        'KdbarangDataGridViewTextBoxColumn
-        '
-        Me.KdbarangDataGridViewTextBoxColumn.DataPropertyName = "kdbarang"
-        Me.KdbarangDataGridViewTextBoxColumn.HeaderText = "kdbarang"
-        Me.KdbarangDataGridViewTextBoxColumn.Name = "KdbarangDataGridViewTextBoxColumn"
-        '
-        'NamaBarang
-        '
-        Me.NamaBarang.HeaderText = "Nama Barang"
-        Me.NamaBarang.Name = "NamaBarang"
-        '
-        'JumlahDataGridViewTextBoxColumn
-        '
-        Me.JumlahDataGridViewTextBoxColumn.DataPropertyName = "jumlah"
-        Me.JumlahDataGridViewTextBoxColumn.HeaderText = "jumlah"
-        Me.JumlahDataGridViewTextBoxColumn.Name = "JumlahDataGridViewTextBoxColumn"
-        '
-        'KondisiDataGridViewTextBoxColumn
-        '
-        Me.KondisiDataGridViewTextBoxColumn.DataPropertyName = "kondisi"
-        Me.KondisiDataGridViewTextBoxColumn.HeaderText = "kondisi"
-        Me.KondisiDataGridViewTextBoxColumn.Name = "KondisiDataGridViewTextBoxColumn"
+        Me.print_btn.BackColor = System.Drawing.Color.Cyan
+        Me.print_btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.print_btn.Font = New System.Drawing.Font("Times New Roman", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.print_btn.ForeColor = System.Drawing.SystemColors.Control
+        Me.print_btn.Location = New System.Drawing.Point(498, 326)
+        Me.print_btn.Name = "print_btn"
+        Me.print_btn.Size = New System.Drawing.Size(132, 36)
+        Me.print_btn.TabIndex = 79
+        Me.print_btn.Text = "PRINT"
+        Me.print_btn.UseVisualStyleBackColor = False
         '
         'FormKeluar
         '
@@ -310,6 +324,7 @@ Partial Class FormKeluar
         Me.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.form_keluar
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(642, 371)
+        Me.Controls.Add(Me.print_btn)
         Me.Controls.Add(Me.txtKodeGudang)
         Me.Controls.Add(Me.rak_cb)
         Me.Controls.Add(Me.gudang_cb)
@@ -371,4 +386,5 @@ Partial Class FormKeluar
     Friend WithEvents NamaBarang As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents JumlahDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
     Friend WithEvents KondisiDataGridViewTextBoxColumn As System.Windows.Forms.DataGridViewTextBoxColumn
+    Friend WithEvents print_btn As System.Windows.Forms.Button
 End Class
