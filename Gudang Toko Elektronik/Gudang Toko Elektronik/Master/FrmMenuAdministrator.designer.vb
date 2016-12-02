@@ -29,6 +29,7 @@ Partial Class FrmMenuAdministrator
         Me.BtnRak = New System.Windows.Forms.Button()
         Me.BtnGudang = New System.Windows.Forms.Button()
         Me.close_btn = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BtnBarang
@@ -90,12 +91,23 @@ Partial Class FrmMenuAdministrator
         Me.close_btn.TabIndex = 25
         Me.close_btn.UseVisualStyleBackColor = True
         '
+        'Button1
+        '
+        Me.Button1.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.button_rak
+        Me.Button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.Button1.Location = New System.Drawing.Point(496, 215)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(100, 100)
+        Me.Button1.TabIndex = 26
+        Me.Button1.UseVisualStyleBackColor = True
+        '
         'FrmMenuAdministrator
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.form_menu_administrator
         Me.ClientSize = New System.Drawing.Size(645, 395)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.close_btn)
         Me.Controls.Add(Me.BtnBrand)
         Me.Controls.Add(Me.BtnRak)
@@ -115,4 +127,5 @@ Partial Class FrmMenuAdministrator
     Friend WithEvents BtnRak As System.Windows.Forms.Button
     Friend WithEvents BtnGudang As System.Windows.Forms.Button
     Friend WithEvents close_btn As System.Windows.Forms.Button
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 End Class

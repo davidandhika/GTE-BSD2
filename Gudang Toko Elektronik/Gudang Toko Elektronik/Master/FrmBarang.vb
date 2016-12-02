@@ -151,4 +151,8 @@ Public Class FrmBarang
         Me.Close()
         FrmMenuAdministrator.Show()
     End Sub
+
+    Private Sub txtKodeBrand_TextChanged(sender As Object, e As EventArgs) Handles txtKodeBrand.TextChanged
+
+    End Sub
 End Class
