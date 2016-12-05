@@ -93,10 +93,19 @@ Public Class FrmPindahRak
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        FrmMenuAdministrator.Show()
     End Sub
 
     Private Sub lblKodeRak_Click(sender As Object, e As EventArgs) Handles lblKodeRak.Click
 
+    End Sub
+
+    Private Sub cmbKodeType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbKodeType.SelectedIndexChanged
+        Dim comboType As New OracleCommand("", conn)
+        comboType.CommandText = "select NMBARANG FROM barang where NMBARANG='" & cmbKodeType.Text & "'"
+        rd = comboType.ExecuteReader
+        While rd.Read
+            txtKodebarang.Text = rd(0)
+        End While
+        rd.Close()
     End Sub
 End Class

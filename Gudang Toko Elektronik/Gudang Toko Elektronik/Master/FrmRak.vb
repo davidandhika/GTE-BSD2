@@ -103,4 +103,8 @@ Public Class FrmRak
         Me.Close()
         FrmMenuAdministrator.Show()
     End Sub
+
+    Private Sub lblKodeRak_Click(sender As Object, e As EventArgs) Handles lblKodeRak.Click
+
+    End Sub
 End Class

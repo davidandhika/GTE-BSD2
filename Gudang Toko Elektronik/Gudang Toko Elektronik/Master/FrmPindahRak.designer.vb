@@ -32,6 +32,8 @@ Partial Class FrmPindahRak
         Me.RAK_CB = New System.Windows.Forms.ComboBox()
         Me.btnUpdate = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtKodebarang = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -130,12 +132,34 @@ Partial Class FrmPindahRak
         Me.TextBox1.Size = New System.Drawing.Size(222, 20)
         Me.TextBox1.TabIndex = 29
         '
+        'txtKodebarang
+        '
+        Me.txtKodebarang.Font = New System.Drawing.Font("Bookman Old Style", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtKodebarang.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.txtKodebarang.Location = New System.Drawing.Point(426, 107)
+        Me.txtKodebarang.Name = "txtKodebarang"
+        Me.txtKodebarang.Size = New System.Drawing.Size(84, 23)
+        Me.txtKodebarang.TabIndex = 30
+        Me.txtKodebarang.Visible = False
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Bookman Old Style", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight
+        Me.TextBox2.Location = New System.Drawing.Point(426, 136)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(84, 23)
+        Me.TextBox2.TabIndex = 31
+        Me.TextBox2.Visible = False
+        '
         'FrmPindahRak
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.form_master_rak1
         Me.ClientSize = New System.Drawing.Size(645, 395)
+        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.txtKodebarang)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.RAK_CB)
         Me.Controls.Add(Me.close_btn)
@@ -147,7 +171,7 @@ Partial Class FrmPindahRak
         Me.Controls.Add(Me.lblKodeRak)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmPindahRak"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "FrmRak"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -162,4 +186,6 @@ Partial Class FrmPindahRak
     Friend WithEvents RAK_CB As System.Windows.Forms.ComboBox
     Friend WithEvents btnUpdate As System.Windows.Forms.Label
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents txtKodebarang As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
 End Class

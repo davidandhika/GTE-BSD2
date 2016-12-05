@@ -8,7 +8,7 @@
             If conn.State = ConnectionState.Open Then
                 MsgBox("Selamat Datang " & username_txt.Text & "!")
                 If username_txt.Text = "david" Or username_txt.Text = "DAVID" Then
-                    FrmMenuAwal.Show()
+                    FrmMenuAdministrator1.Show()
                     Me.Hide()
                 Else
                     MainMenu_client.Show()

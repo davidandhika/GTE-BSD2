@@ -155,4 +155,8 @@ Public Class FrmBarang
     Private Sub txtKodeBrand_TextChanged(sender As Object, e As EventArgs) Handles txtKodeBrand.TextChanged
 
     End Sub
+
+    Private Sub txtKodeType_TextChanged(sender As Object, e As EventArgs) Handles txtKodeType.TextChanged
+
+    End Sub
 End Class
