@@ -122,9 +122,4 @@ Public Class FormKeluar
         End While
         dr.Close()
     End Sub
-
-
-    Private Sub print_btn_Click(sender As Object, e As EventArgs) Handles print_btn.Click
-
-    End Sub
 End Class

@@ -37,4 +37,9 @@
 
 
     End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
+        FrmPindahRak.Show()
+        Me.Hide()
+    End Sub
 End Class

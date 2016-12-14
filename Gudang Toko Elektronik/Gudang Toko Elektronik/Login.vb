@@ -9,9 +9,14 @@
                 MsgBox("Selamat Datang " & username_txt.Text & "!")
                 If username_txt.Text = "david" Or username_txt.Text = "DAVID" Then
                     FrmMenuAdministrator1.Show()
+                    '  FrmMenuAdministrator1.RibbonPage2.Visible = False
+                    FrmMenuAdministrator1.CLIENT.Visible = False
                     Me.Hide()
                 Else
-                    MainMenu_client.Show()
+                    '  MainMenu_client.Show()
+                    FrmMenuAdministrator1.Show()
+                    FrmMenuAdministrator1.RibbonPage2.Visible = False
+                    FrmMenuAdministrator1.RibbonPage1.Visible = False
                     Me.Hide()
                 End If
             Else

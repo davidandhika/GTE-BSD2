@@ -81,8 +81,76 @@
     End Sub
 
 
+   
     Private Sub FrmMenuAdministrator1_FormClosed(sender As Object, e As FormClosedEventArgs) Handles MyBase.FormClosed
-        Me.Close()
 
+    End Sub
+
+    Private Sub FrmMenuAdministrator1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        Application.Exit()
+
+    End Sub
+
+    Private Sub BarButtonItem10_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem10.ItemClick
+        If IsOpen("FrmRptTransKeluar") = False Then
+            Dim frm As New FrmRptTransKeluar
+            frm.MdiParent = Me
+            frm.Show()
+            childNumber += 1
+        End If
+    End Sub
+
+    Private Sub BarButtonItem11_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs)
+        If IsOpen("FrmRptSuratJalan") = False Then
+            Dim frm As New FrmRptSuratJalan
+            frm.MdiParent = Me
+            frm.Show()
+            childNumber += 1
+        End If
+    End Sub
+
+    Private Sub BarButtonItem12_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem12.ItemClick
+        If IsOpen("FrmRptOpname") = False Then
+            Dim frm As New FrmRptOpname
+            frm.MdiParent = Me
+            frm.Show()
+            childNumber += 1
+        End If
+    End Sub
+
+    Private Sub BarButtonItem7_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem7.ItemClick
+        If IsOpen("FormMasuk") = False Then
+            Dim frm As New FormMasuk
+            frm.MdiParent = Me
+            frm.Show()
+            childNumber += 1
+        End If
+    End Sub
+
+    Private Sub BarButtonItem8_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem8.ItemClick
+        If IsOpen("FormKeluar") = False Then
+            Dim frm As New FormKeluar
+            frm.MdiParent = Me
+            frm.Show()
+            childNumber += 1
+        End If
+    End Sub
+
+    Private Sub BarButtonItem9_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem9.ItemClick
+        If IsOpen("MasterOpname") = False Then
+            Dim frm As New Opname
+            frm.MdiParent = Me
+            frm.Show()
+            childNumber += 1
+        End If
+    End Sub
+
+    Private Sub BarButtonItem11_ItemClick_1(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem11.ItemClick
+        If IsOpen("cetaksuratjalan") = False Then
+            Dim frm As New FrmRptSuratJalan
+            frm.MdiParent = Me
+            frm.Show()
+            childNumber += 1
+        End If
     End Sub
 End Class

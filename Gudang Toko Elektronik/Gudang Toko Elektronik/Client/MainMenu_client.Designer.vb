@@ -96,7 +96,7 @@ Partial Class MainMenu_client
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.MainMenuClient
-        Me.ClientSize = New System.Drawing.Size(613, 319)
+        Me.ClientSize = New System.Drawing.Size(613, 372)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnCetakSJ)
         Me.Controls.Add(Me.close_btn)
