@@ -79,7 +79,6 @@ Public Class FormMasuk
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        MainMenu_client.Show()
     End Sub
 
     Private Sub delete_btn_Click(sender As Object, e As EventArgs) Handles delete_btn.Click

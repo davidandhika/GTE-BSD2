@@ -101,7 +101,6 @@ Public Class FrmRak
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        FrmMenuAdministrator.Show()
     End Sub
 
     Private Sub lblKodeRak_Click(sender As Object, e As EventArgs) Handles lblKodeRak.Click

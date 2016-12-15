@@ -98,6 +98,5 @@ Public Class FrmGudang
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        FrmMenuAdministrator.Show()
     End Sub
 End Class
