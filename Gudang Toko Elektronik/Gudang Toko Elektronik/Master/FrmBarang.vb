@@ -149,7 +149,7 @@ Public Class FrmBarang
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        FrmMenuAdministrator.Show()
+        'FrmMenuAdministrator.Show()
     End Sub
 
     Private Sub txtKodeBrand_TextChanged(sender As Object, e As EventArgs) Handles txtKodeBrand.TextChanged

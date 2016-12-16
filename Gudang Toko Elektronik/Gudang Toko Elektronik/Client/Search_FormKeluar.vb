@@ -2,6 +2,7 @@
 Public Class Search_FormKeluar
     Dim ds As New DataSet
     Dim da As OracleDataAdapter
+    Public isi_kdbrg = "", isi_nmbrg As String = ""
     Private Sub search_btn_Click(sender As Object, e As EventArgs) Handles search_btn.Click
         Try
             Dim cmd As New OracleCommand("select * from s_barang where kdbarang='" & TextBox2.Text & "'", conn)
@@ -16,8 +17,10 @@ Public Class Search_FormKeluar
     Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         Dim barisdgv As Integer = e.RowIndex
         If barisdgv >= 0 Then
-            FormKeluar.kdbarang_txt.Text = DataGridView1.Item(0, barisdgv).Value
-            FormKeluar.nmBarang_txt.Text = DataGridView1.Item(1, barisdgv).Value
+            isi_kdbrg = DataGridView1.Item(0, barisdgv).Value.ToString()
+            isi_nmbrg = DataGridView1.Item(1, barisdgv).Value.ToString()
+            FormKeluar.kdbarang_txt.Text = DataGridView1.Item(0, barisdgv).Value.ToString()
+            FormKeluar.nmBarang_txt.Text = DataGridView1.Item(1, barisdgv).Value.ToString()
         End If
         Me.Close()
     End Sub

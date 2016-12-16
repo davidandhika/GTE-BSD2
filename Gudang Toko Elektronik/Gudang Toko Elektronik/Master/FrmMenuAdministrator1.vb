@@ -131,7 +131,8 @@
         If IsOpen("FormKeluar") = False Then
             Dim frm As New FormKeluar
             frm.MdiParent = Me
-            frm.Show()
+            'frm.Show()
+            FormKeluar.Show()
             childNumber += 1
         End If
     End Sub
