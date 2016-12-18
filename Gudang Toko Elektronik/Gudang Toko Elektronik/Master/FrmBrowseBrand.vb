@@ -38,6 +38,7 @@ Public Class FrmBrowseBrand
         Me.Close()
         'FrmBrand.Show()
     End Sub
+<<<<<<< HEAD
 
     Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         Dim barisdgv As Integer = e.RowIndex
@@ -49,4 +50,6 @@ Public Class FrmBrowseBrand
         End If
         Me.Close()
     End Sub
+=======
+>>>>>>> origin/master
 End Class

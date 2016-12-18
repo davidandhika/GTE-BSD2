@@ -140,9 +140,16 @@
 
     Private Sub BarButtonItem8_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem8.ItemClick
         If IsOpen("FormKeluar") = False Then
+<<<<<<< HEAD
             frmKeluar = New FormKeluar
             frmKeluar.MdiParent = Me
             frmKeluar.Show()
+=======
+            Dim frm As New FormKeluar
+            frm.MdiParent = Me
+            'frm.Show()
+            FormKeluar.Show()
+>>>>>>> origin/master
             childNumber += 1
         End If
     End Sub

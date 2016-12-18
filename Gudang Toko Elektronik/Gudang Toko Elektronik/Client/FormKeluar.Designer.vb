@@ -46,12 +46,12 @@ Partial Class FormKeluar
         Me.search_btn = New System.Windows.Forms.Button()
         Me.kdbarang_txt = New System.Windows.Forms.TextBox()
         Me.insert_btn = New System.Windows.Forms.Button()
-        Me.Dslengkap = New Gudang_Toko_Elektronik.Dslengkap()
         Me.DetailkeluarBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Dslengkap = New Gudang_Toko_Elektronik.Dslengkap()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.jumlah_txt, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DetailkeluarBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtKodeGudang
@@ -133,6 +133,7 @@ Partial Class FormKeluar
         '
         Me.NamaBarang.HeaderText = "Nama Barang"
         Me.NamaBarang.Name = "NamaBarang"
+        Me.NamaBarang.ReadOnly = True
         '
         'noSuratJalan_txt
         '
@@ -263,15 +264,14 @@ Partial Class FormKeluar
         Me.insert_btn.TabIndex = 58
         Me.insert_btn.UseVisualStyleBackColor = True
         '
+        'DetailkeluarBindingSource
+        '
+        Me.DetailkeluarBindingSource.DataMember = "detail_keluar"
+        '
         'Dslengkap
         '
         Me.Dslengkap.DataSetName = "Dslengkap"
         Me.Dslengkap.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'DetailkeluarBindingSource
-        '
-        Me.DetailkeluarBindingSource.DataMember = "detail_keluar"
-        Me.DetailkeluarBindingSource.DataSource = Me.Dslengkap
         '
         'FormKeluar
         '
@@ -307,8 +307,8 @@ Partial Class FormKeluar
         Me.Text = "FormKeluar"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.jumlah_txt, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DetailkeluarBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -335,6 +335,6 @@ Partial Class FormKeluar
     Friend WithEvents search_btn As System.Windows.Forms.Button
     Friend WithEvents kdbarang_txt As System.Windows.Forms.TextBox
     Friend WithEvents insert_btn As System.Windows.Forms.Button
-    Friend WithEvents Dslengkap As Gudang_Toko_Elektronik.Dslengkap
     Friend WithEvents DetailkeluarBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents Dslengkap As Gudang_Toko_Elektronik.Dslengkap
 End Class

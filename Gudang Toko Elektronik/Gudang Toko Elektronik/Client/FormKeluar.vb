@@ -106,7 +106,7 @@ Public Class FormKeluar
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        MainMenu_client.Show()
+        ' MainMenu_client.Show()
     End Sub
 
     Private Sub search_btn_Click(sender As Object, e As EventArgs) Handles search_btn.Click
