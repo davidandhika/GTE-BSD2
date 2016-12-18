@@ -41,23 +41,21 @@ Public Class FrmBrowseRakbarang
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
 
-        FrmPindahRak.Show()
-        Me.Hide()
+        'FrmPindahRak.Show()
+        Me.Close()
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         Dim barisdgv As Integer = e.RowIndex
         If barisdgv >= 0 Then
-            FrmPindahRak.lblKodeRak.Text = DataGridView1.Item(0, barisdgv).Value
-            FrmPindahRak.cmbKodeType.Text = DataGridView1.Item(1, barisdgv).Value
-            FrmPindahRak.RAK_CB.Text = DataGridView1.Item(2, barisdgv).Value
-            FrmPindahRak.TextBox1.Text = DataGridView1.Item(1, barisdgv).Value
+            With FrmMenuAdministrator1
+                .frmPindahRak.lblKodeRak.Text = DataGridView1.Item(0, barisdgv).Value
+                .frmPindahRak.cmbKodeType.Text = DataGridView1.Item(1, barisdgv).Value
+                .frmPindahRak.RAK_CB.Text = DataGridView1.Item(2, barisdgv).Value
+                .frmPindahRak.TextBox1.Text = DataGridView1.Item(1, barisdgv).Value
+            End With
         End If
         Me.Close()
-        FrmPindahRak.Show()
-    End Sub
-
-    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
 
     End Sub
 End Class

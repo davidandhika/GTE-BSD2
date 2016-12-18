@@ -32,7 +32,7 @@
     End Sub
 
     Private Sub btnCetakSJ_Click(sender As Object, e As EventArgs) Handles btnCetakSJ.Click
-        FormCetakSuratJalan.Show()
+        FormCSJ.Show()
         Me.Hide()
 
 

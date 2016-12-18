@@ -64,10 +64,10 @@ Public Class FrmBrand
     End Sub
     Private Sub btnBrowse_Click(sender As Object, e As EventArgs) Handles btnBrowse.Click
         FrmBrowseBrand.Show()
-        Me.Hide()
+        'Me.Hide()
     End Sub
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        FrmMenuAdministrator.Show()
+        ' FrmMenuAdministrator.Show()
     End Sub
 End Class

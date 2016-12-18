@@ -118,6 +118,12 @@
     <Compile Include="Client\FormCetakSuratJalan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Client\FormCSJ.designer.vb">
+      <DependentUpon>FormCSJ.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Client\FormCSJ.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Client\FormKeluar.Designer.vb">
       <DependentUpon>FormKeluar.vb</DependentUpon>
     </Compile>
@@ -159,11 +165,11 @@
       <DependentUpon>CrystalReport1.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Laporan\rptSuratJalan.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptSuratJalan.rpt</DependentUpon>
-      <SubType>Component</SubType>
+    <Compile Include="Laporan\FrmRptTransKeluar.designer.vb">
+      <DependentUpon>FrmRptTransKeluar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\FrmRptTransKeluar.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Laporan\FrmRptOpname.Designer.vb">
       <DependentUpon>FrmRptOpname.vb</DependentUpon>
@@ -183,6 +189,12 @@
     <Compile Include="Laporan\FrmRptSuratJalan.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Laporan\rptSuratJalan.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptSuratJalan.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Laporan\rptTransKeluar.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -201,6 +213,12 @@
     <Compile Include="Master\FrmBrowseRak.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Master\FrmBrowseRakbarang.designer.vb">
+      <DependentUpon>FrmBrowseRakbarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmBrowseRakbarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Master\FrmBrowseType.designer.vb">
       <DependentUpon>FrmBrowseType.vb</DependentUpon>
     </Compile>
@@ -211,6 +229,18 @@
       <DependentUpon>FrmGudang.vb</DependentUpon>
     </Compile>
     <Compile Include="Master\FrmGudang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmMenuAdministrator1.Designer.vb">
+      <DependentUpon>FrmMenuAdministrator1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmMenuAdministrator1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\FrmPindahRak.designer.vb">
+      <DependentUpon>FrmPindahRak.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\FrmPindahRak.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Master\FrmRak.designer.vb">
@@ -301,6 +331,9 @@
     <EmbeddedResource Include="Client\FormCetakSuratJalan.resx">
       <DependentUpon>FormCetakSuratJalan.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Client\FormCSJ.resx">
+      <DependentUpon>FormCSJ.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Client\FormKeluar.resx">
       <DependentUpon>FormKeluar.vb</DependentUpon>
     </EmbeddedResource>
@@ -320,9 +353,8 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport1.vb</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Laporan\rptSuratJalan.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptSuratJalan.vb</LastGenOutput>
+    <EmbeddedResource Include="Laporan\FrmRptTransKeluar.resx">
+      <DependentUpon>FrmRptTransKeluar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\FrmRptOpname.resx">
       <DependentUpon>FrmRptOpname.vb</DependentUpon>
@@ -334,6 +366,10 @@
     <EmbeddedResource Include="Laporan\FrmRptSuratJalan.resx">
       <DependentUpon>FrmRptSuratJalan.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\rptSuratJalan.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptSuratJalan.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Laporan\rptTransKeluar.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptTransKeluar.vb</LastGenOutput>
@@ -344,11 +380,20 @@
     <EmbeddedResource Include="Master\FrmBrowseRak.resx">
       <DependentUpon>FrmBrowseRak.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmBrowseRakbarang.resx">
+      <DependentUpon>FrmBrowseRakbarang.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmBrowseType.resx">
       <DependentUpon>FrmBrowseType.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmGudang.resx">
       <DependentUpon>FrmGudang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmMenuAdministrator1.resx">
+      <DependentUpon>FrmMenuAdministrator1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\FrmPindahRak.resx">
+      <DependentUpon>FrmPindahRak.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmRak.resx">
       <DependentUpon>FrmRak.vb</DependentUpon>
@@ -423,7 +468,9 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\button barang.png" />

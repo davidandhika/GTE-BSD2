@@ -1,7 +1,6 @@
 ﻿Imports Oracle.DataAccess.Client
-Public Class FormCetakSuratJalan
+Public Class FormCSJ
     Dim ds As New DataSetSJ
-    'ds = New DataSetSJ
     Dim da As OracleDataAdapter
     Dim selectedindex As Integer
     Dim dr As OracleDataReader
@@ -78,7 +77,18 @@ Public Class FormCetakSuratJalan
 
     Private Sub noTransKeluar_txt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles noTransKeluar_txt.KeyPress
         If (e.KeyChar = Chr(13)) Then
+            ' refreshTabel()
             cari()
+
+            'Try
+            '    Dim cmd As New OracleCommand("select KDTRANSKELUAR,KDBARANG,JUMLAH from S_DETAIL_KELUAR where KDTRANSKELUAR='" & noTransKeluar_txt.Text & "'", conn)
+            '    da = New OracleDataAdapter(cmd)
+            '    da.Fill(ds, "S_DETAIL_KELUAR")
+            '    DataGridView1.DataSource = ds.Tables(0)
+            'Catch ex As Exception
+            '    MsgBox(ex.Message)
+            'End Try
+
         End If
 
     End Sub
@@ -90,11 +100,29 @@ Public Class FormCetakSuratJalan
     Private Sub FormCetakSuratJalan_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tgl_lbl.Text = String.Format("{0:dd/MM/yy}", DateTime.Now)
 
+
+        With DataGridView2
+            .Columns.Add("kodesk", "No. SK")
+            .Columns.Add("nama", "Nama Barang")
+            .Columns.Add("jumlah", "Jumlah")
+            .Columns(0).Width = 100
+            .Columns(1).Width = 350
+            .Columns(2).Width = 100
+        End With
+
+        'Try
+        '    Dim cmd As New OracleCommand("select * from S_DETAIL_KELUAR", conn)
+        '    da = New OracleDataAdapter(cmd)
+        '    da.Fill(ds, "S_DETAIL_KELUAR")
+        '    DataGridView1.DataSource = ds.Tables(0)
+        'Catch ex As Exception
+        '    MsgBox(ex.Message)
+        'End Try
+
     End Sub
 
     Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
         FrmRptSuratJalan.Show()
-
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
@@ -105,6 +133,9 @@ Public Class FormCetakSuratJalan
         dr.jumlah = txtJumlah.Text
         dt.Rows.Add(dr)
 
+        'DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("kodesk").Value = noTransKeluar_txt.Text()
+        'DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("nama").Value = txtNamaBarang.Text()
+        'DataGridView2.Rows(DataGridView2.RowCount - 1).Cells("jumlah").Value = txtJumlah.Text()
     End Sub
 
 End Class

@@ -30,27 +30,22 @@ Public Class FrmBrowseRak
         isiTable()
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        
-    End Sub
-
+    
     Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
         cari()
     End Sub
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
-
-        FrmRak.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         Dim barisdgv As Integer = e.RowIndex
         If barisdgv >= 0 Then
-            FrmRak.lblKodeRak.Text = DataGridView1.Item(0, barisdgv).Value
-            FrmRak.cmbKodeType.Text = DataGridView1.Item(1, barisdgv).Value
+            FrmMenuAdministrator1.frmRak.lblKodeRak.Text = DataGridView1.Item(0, barisdgv).Value
+            FrmMenuAdministrator1.frmRak.cmbKodeType.Text = DataGridView1.Item(1, barisdgv).Value
         End If
         Me.Close()
-        FrmRak.Show()
+
     End Sub
 End Class

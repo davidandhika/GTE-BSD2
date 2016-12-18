@@ -40,7 +40,7 @@ Public Class FrmPindahRak
 
     Private Sub btnBrowse_Click(sender As Object, e As EventArgs) Handles btnBrowse.Click
         FrmBrowseRakbarang.Show()
-        Me.Hide()
+        'Me.Hide()
     End Sub
 
     Private Sub FrmRak_Load(sender As Object, e As EventArgs) Handles MyBase.Load

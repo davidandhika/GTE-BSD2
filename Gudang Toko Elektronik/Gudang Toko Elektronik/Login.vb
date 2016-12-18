@@ -26,7 +26,8 @@
     End Sub
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
-        Me.Close()
+        ' Me.Close()
+        Application.Exit()
     End Sub
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load

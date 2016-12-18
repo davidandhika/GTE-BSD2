@@ -171,7 +171,7 @@ Partial Class FrmPindahRak
         Me.Controls.Add(Me.lblKodeRak)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "FrmPindahRak"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FrmRak"
         Me.ResumeLayout(False)
         Me.PerformLayout()

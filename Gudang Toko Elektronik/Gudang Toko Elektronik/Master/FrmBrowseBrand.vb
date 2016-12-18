@@ -33,22 +33,20 @@ Public Class FrmBrowseBrand
         cari()
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-        Dim barisdgv As Integer = e.RowIndex
-        If barisdgv >= 0 Then
-            FrmBrand.lblKodeBrand.Text = DataGridView1.Item(0, barisdgv).Value
-            FrmBrand.txtNamaBrand.Text = DataGridView1.Item(1, barisdgv).Value
-        End If
-        Me.Close()
-        FrmBrand.Show()
-    End Sub
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        FrmBrand.Show()
+        'FrmBrand.Show()
     End Sub
 
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
+        Dim barisdgv As Integer = e.RowIndex
+        If barisdgv >= 0 Then
+            With FrmMenuAdministrator1
+                .frmBrand.lblKodeBrand.Text = DataGridView1.Item(0, barisdgv).Value
+                .frmBrand.txtNamaBrand.Text = DataGridView1.Item(1, barisdgv).Value
+            End With
+        End If
+        Me.Close()
     End Sub
 End Class

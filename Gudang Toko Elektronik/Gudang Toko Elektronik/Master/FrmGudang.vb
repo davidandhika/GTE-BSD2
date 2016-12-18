@@ -1,7 +1,7 @@
 ﻿Imports Oracle.DataAccess.Client
 Public Class FrmGudang
     Dim cmd As New OracleCommand("", conn)
-    
+    Public childNumber As Integer
     Private Sub FrmGudang_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If conn.State = ConnectionState.Open Then
             start()
@@ -50,7 +50,6 @@ Public Class FrmGudang
 
     Private Sub btnBrowse_Click(sender As Object, e As EventArgs) Handles btnBrowse.Click
         FrmBrowseGudang.Show()
-        Me.Hide()
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click

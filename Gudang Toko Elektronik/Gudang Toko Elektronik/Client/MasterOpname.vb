@@ -8,7 +8,7 @@ Public Class Opname
 
     Private Sub search_btn_Click(sender As Object, e As EventArgs) Handles search2_btn.Click
         Search.Show()
-        Me.Hide()
+        'Me.Hide()
         actual_txt.Focus()
     End Sub
 

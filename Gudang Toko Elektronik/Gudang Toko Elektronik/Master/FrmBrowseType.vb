@@ -32,23 +32,18 @@ Public Class FrmBrowseType
         isiTable()
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
+        'FrmType.Show()
+        Me.Close()
+    End Sub
+
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         Dim barisdgv As Integer = e.RowIndex
         If barisdgv >= 0 Then
 
-            FrmType.lblKodeType.Text = DataGridView1.Item(0, barisdgv).Value
-            FrmType.txtNamaType.Text = DataGridView1.Item(1, barisdgv).Value
+            FrmMenuAdministrator1.frmType.lblKodeType.Text = DataGridView1.Item(0, barisdgv).Value
+            FrmMenuAdministrator1.frmType.txtNamaType.Text = DataGridView1.Item(1, barisdgv).Value
         End If
         Me.Close()
-        FrmType.Show()
-    End Sub
-
-    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
-        FrmType.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-
     End Sub
 End Class

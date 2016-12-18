@@ -41,27 +41,23 @@ Public Class FrmBrowseGudang
         cari()
     End Sub
 
-    Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
+        'FrmGudang.Show()
+        Me.Close()
+    End Sub
+    Private Sub DataGridView1_CellDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellDoubleClick
         Dim barisdgv As Integer = e.RowIndex
         If barisdgv >= 0 Then
-
-            FrmGudang.lblKodeGudang.Text = DataGridView1.Item(0, barisdgv).Value
-            FrmGudang.txtNamaGudang.Text = DataGridView1.Item(1, barisdgv).Value
-            FrmGudang.txtAlamat.Text = DataGridView1.Item(2, barisdgv).Value
-            FrmGudang.txtKota.Text = DataGridView1.Item(3, barisdgv).Value
-            FrmGudang.txtTelp.Text = DataGridView1.Item(4, barisdgv).Value
-            FrmGudang.txtContactPerson.Text = DataGridView1.Item(5, barisdgv).Value
+            With FrmMenuAdministrator1
+                .frmGudang.lblKodeGudang.Text = DataGridView1.Item(0, barisdgv).Value
+                .frmGudang.txtNamaGudang.Text = DataGridView1.Item(1, barisdgv).Value
+                .frmGudang.txtAlamat.Text = DataGridView1.Item(2, barisdgv).Value
+                .frmGudang.txtKota.Text = DataGridView1.Item(3, barisdgv).Value
+                .frmGudang.txtTelp.Text = DataGridView1.Item(4, barisdgv).Value
+                .frmGudang.txtContactPerson.Text = DataGridView1.Item(5, barisdgv).Value
+            End With
         End If
         Me.Close()
-        FrmGudang.Show()
-    End Sub
-
-    Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
-        FrmGudang.Show()
-        Me.Close()
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
 
     End Sub
 End Class

@@ -3,8 +3,6 @@ Public Class FrmBarang
     Dim cmd As New OracleCommand("", conn)
     Dim rd As OracleDataReader
 
- 
-    '-------------------------------------------
     Sub AutoGenerate()
         cmd.CommandText = "SELECT generateBarang from dual"
         lblKodeBarang.Text = cmd.ExecuteScalar
@@ -124,7 +122,7 @@ Public Class FrmBarang
 
     Private Sub btnBrowse_Click(sender As Object, e As EventArgs) Handles btnBrowse.Click
         FrmBrowseBarang.Show()
-        Me.Hide()
+        'Me.Hide()
     End Sub
 
     Private Sub cmbNamaType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbNamaType.SelectedIndexChanged
@@ -149,7 +147,7 @@ Public Class FrmBarang
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        FrmMenuAdministrator.Show()
+        'FrmMenuAdministrator.Show()
     End Sub
 
     Private Sub txtKodeBrand_TextChanged(sender As Object, e As EventArgs) Handles txtKodeBrand.TextChanged
