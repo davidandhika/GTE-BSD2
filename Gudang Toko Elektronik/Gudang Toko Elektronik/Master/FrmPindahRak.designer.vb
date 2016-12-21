@@ -54,7 +54,7 @@ Partial Class FrmPindahRak
         Me.btnBrowse.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.btnBrowse.Font = New System.Drawing.Font("Britannic Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBrowse.ForeColor = System.Drawing.SystemColors.MenuBar
-        Me.btnBrowse.Location = New System.Drawing.Point(341, 79)
+        Me.btnBrowse.Location = New System.Drawing.Point(341, 116)
         Me.btnBrowse.Name = "btnBrowse"
         Me.btnBrowse.Size = New System.Drawing.Size(70, 23)
         Me.btnBrowse.TabIndex = 23
@@ -67,7 +67,7 @@ Partial Class FrmPindahRak
         Me.btnSave.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.btnSave.Font = New System.Drawing.Font("Britannic Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSave.ForeColor = System.Drawing.SystemColors.MenuBar
-        Me.btnSave.Location = New System.Drawing.Point(283, 207)
+        Me.btnSave.Location = New System.Drawing.Point(283, 244)
         Me.btnSave.Name = "btnSave"
         Me.btnSave.Size = New System.Drawing.Size(70, 23)
         Me.btnSave.TabIndex = 20
@@ -80,7 +80,7 @@ Partial Class FrmPindahRak
         Me.lblKodeRak.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblKodeRak.Font = New System.Drawing.Font("Bookman Old Style", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblKodeRak.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.lblKodeRak.Location = New System.Drawing.Point(207, 79)
+        Me.lblKodeRak.Location = New System.Drawing.Point(207, 116)
         Me.lblKodeRak.Name = "lblKodeRak"
         Me.lblKodeRak.Size = New System.Drawing.Size(128, 23)
         Me.lblKodeRak.TabIndex = 19
@@ -90,7 +90,7 @@ Partial Class FrmPindahRak
         'cmbKodeType
         '
         Me.cmbKodeType.FormattingEnabled = True
-        Me.cmbKodeType.Location = New System.Drawing.Point(207, 109)
+        Me.cmbKodeType.Location = New System.Drawing.Point(207, 146)
         Me.cmbKodeType.Name = "cmbKodeType"
         Me.cmbKodeType.Size = New System.Drawing.Size(204, 21)
         Me.cmbKodeType.TabIndex = 25
@@ -107,7 +107,7 @@ Partial Class FrmPindahRak
         'RAK_CB
         '
         Me.RAK_CB.FormattingEnabled = True
-        Me.RAK_CB.Location = New System.Drawing.Point(207, 138)
+        Me.RAK_CB.Location = New System.Drawing.Point(207, 175)
         Me.RAK_CB.Name = "RAK_CB"
         Me.RAK_CB.Size = New System.Drawing.Size(204, 21)
         Me.RAK_CB.TabIndex = 28
@@ -118,7 +118,7 @@ Partial Class FrmPindahRak
         Me.btnUpdate.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.btnUpdate.Font = New System.Drawing.Font("Britannic Bold", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnUpdate.ForeColor = System.Drawing.SystemColors.MenuBar
-        Me.btnUpdate.Location = New System.Drawing.Point(359, 208)
+        Me.btnUpdate.Location = New System.Drawing.Point(359, 245)
         Me.btnUpdate.Name = "btnUpdate"
         Me.btnUpdate.Size = New System.Drawing.Size(70, 23)
         Me.btnUpdate.TabIndex = 21
@@ -127,7 +127,7 @@ Partial Class FrmPindahRak
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(207, 165)
+        Me.TextBox1.Location = New System.Drawing.Point(207, 202)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(222, 20)
         Me.TextBox1.TabIndex = 29
@@ -136,7 +136,7 @@ Partial Class FrmPindahRak
         '
         Me.txtKodebarang.Font = New System.Drawing.Font("Bookman Old Style", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtKodebarang.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.txtKodebarang.Location = New System.Drawing.Point(426, 107)
+        Me.txtKodebarang.Location = New System.Drawing.Point(426, 144)
         Me.txtKodebarang.Name = "txtKodebarang"
         Me.txtKodebarang.Size = New System.Drawing.Size(84, 23)
         Me.txtKodebarang.TabIndex = 30
@@ -146,7 +146,7 @@ Partial Class FrmPindahRak
         '
         Me.TextBox2.Font = New System.Drawing.Font("Bookman Old Style", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBox2.ForeColor = System.Drawing.SystemColors.MenuHighlight
-        Me.TextBox2.Location = New System.Drawing.Point(426, 136)
+        Me.TextBox2.Location = New System.Drawing.Point(426, 173)
         Me.TextBox2.Name = "TextBox2"
         Me.TextBox2.Size = New System.Drawing.Size(84, 23)
         Me.TextBox2.TabIndex = 31
@@ -156,7 +156,7 @@ Partial Class FrmPindahRak
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.form_master_rak1
+        Me.BackgroundImage = Global.Gudang_Toko_Elektronik.My.Resources.Resources.master_form_pindah_rak
         Me.ClientSize = New System.Drawing.Size(645, 395)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.txtKodebarang)
