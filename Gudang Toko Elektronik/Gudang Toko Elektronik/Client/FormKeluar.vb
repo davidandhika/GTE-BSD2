@@ -42,6 +42,8 @@ Public Class FormKeluar
     End Sub
 
     Private Sub insert_btn_Click(sender As Object, e As EventArgs) Handles insert_btn.Click
+
+
         Dim dt As Dslengkap.detail_keluarDataTable = Dslengkap.detail_keluar
         Dim dr As Dslengkap.detail_keluarRow = dt.NewRow
         dr.kdtranskeluar = noSuratJalan_txt.Text
@@ -80,7 +82,7 @@ Public Class FormKeluar
             'cmdheader.Parameters.Add(":tgl_keluar", tgl_lbl.Text)
             cmdheader.ExecuteNonQuery()
             trans.Commit()
-            ds.Clear()
+            Dslengkap.Clear()
             MsgBox("Simpan transaksi berhasil")
         Catch ex As Exception
             MsgBox(ex.Message)
@@ -106,7 +108,7 @@ Public Class FormKeluar
 
     Private Sub close_btn_Click(sender As Object, e As EventArgs) Handles close_btn.Click
         Me.Close()
-        ' MainMenu_client.Show()
+        'MainMenu_client.Show()
     End Sub
 
     Private Sub search_btn_Click(sender As Object, e As EventArgs) Handles search_btn.Click

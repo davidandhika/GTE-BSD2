@@ -159,6 +159,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Dslengkap.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dslengkap.vb">
+      <DependentUpon>Dslengkap.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Laporan\CrystalReport1.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -170,15 +173,6 @@
     </Compile>
     <Compile Include="Laporan\FrmRptTransKeluar.vb">
       <SubType>Form</SubType>
-<<<<<<< HEAD
-=======
-    </Compile>
-    <Compile Include="Laporan\rptSuratJalan.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rptSuratJalan.rpt</DependentUpon>
-      <SubType>Component</SubType>
->>>>>>> origin/master
     </Compile>
     <Compile Include="Laporan\FrmRptOpname.Designer.vb">
       <DependentUpon>FrmRptOpname.vb</DependentUpon>
@@ -364,13 +358,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\FrmRptTransKeluar.resx">
       <DependentUpon>FrmRptTransKeluar.vb</DependentUpon>
-<<<<<<< HEAD
-=======
-    </EmbeddedResource>
-    <EmbeddedResource Include="Laporan\rptSuratJalan.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rptSuratJalan.vb</LastGenOutput>
->>>>>>> origin/master
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\FrmRptOpname.resx">
       <DependentUpon>FrmRptOpname.vb</DependentUpon>

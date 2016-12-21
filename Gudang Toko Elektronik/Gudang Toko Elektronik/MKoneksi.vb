@@ -6,8 +6,6 @@ Module MKoneksi
         conn.ConnectionString = "data source=" & datasource & "; user id=" & id & "; password=" & pass
         Try
             conn.Open()
-
-
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
