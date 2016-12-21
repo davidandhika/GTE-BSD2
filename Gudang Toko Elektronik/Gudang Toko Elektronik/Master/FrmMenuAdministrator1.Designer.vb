@@ -19,17 +19,11 @@ Partial Class FrmMenuAdministrator1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim SuperToolTip8 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
-        Dim ToolTipTitleItem8 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(FrmMenuAdministrator1))
+        Dim SuperToolTip1 As DevExpress.Utils.SuperToolTip = New DevExpress.Utils.SuperToolTip()
+        Dim ToolTipTitleItem1 As DevExpress.Utils.ToolTipTitleItem = New DevExpress.Utils.ToolTipTitleItem()
         Me.RibbonStatusBar = New DevExpress.XtraBars.Ribbon.RibbonStatusBar()
-        Me.RibbonPageCategory2 = New DevExpress.XtraBars.Ribbon.RibbonPageCategory()
-        Me.RibbonPageCategory1 = New DevExpress.XtraBars.Ribbon.RibbonPageCategory()
-        Me.CLIENT = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.RibbonPageGroup2 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
-        Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.RibbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
-        Me.RibbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonControl = New DevExpress.XtraBars.Ribbon.RibbonControl()
         Me.BarButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem2 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem3 = New DevExpress.XtraBars.BarButtonItem()
@@ -39,11 +33,17 @@ Partial Class FrmMenuAdministrator1
         Me.BarButtonItem7 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem8 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem9 = New DevExpress.XtraBars.BarButtonItem()
-        Me.RibbonControl = New DevExpress.XtraBars.Ribbon.RibbonControl()
-        Me.RibbonPageGroup3 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         Me.BarButtonItem10 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem12 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem11 = New DevExpress.XtraBars.BarButtonItem()
+        Me.RibbonPageCategory1 = New DevExpress.XtraBars.Ribbon.RibbonPageCategory()
+        Me.RibbonPageCategory2 = New DevExpress.XtraBars.Ribbon.RibbonPageCategory()
+        Me.RibbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.RibbonPageGroup1 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.RibbonPage2 = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.RibbonPageGroup3 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
+        Me.CLIENT = New DevExpress.XtraBars.Ribbon.RibbonPage()
+        Me.RibbonPageGroup2 = New DevExpress.XtraBars.Ribbon.RibbonPageGroup()
         CType(Me.RibbonControl, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -54,58 +54,18 @@ Partial Class FrmMenuAdministrator1
         Me.RibbonStatusBar.Ribbon = Me.RibbonControl
         Me.RibbonStatusBar.Size = New System.Drawing.Size(871, 31)
         '
-        'RibbonPageCategory2
+        'RibbonControl
         '
-        Me.RibbonPageCategory2.Name = "RibbonPageCategory2"
-        Me.RibbonPageCategory2.Text = "RibbonPageCategory2"
-        '
-        'RibbonPageCategory1
-        '
-        Me.RibbonPageCategory1.Name = "RibbonPageCategory1"
-        Me.RibbonPageCategory1.Text = "RibbonPageCategory1"
-        '
-        'CLIENT
-        '
-        Me.CLIENT.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup2})
-        Me.CLIENT.Name = "CLIENT"
-        Me.CLIENT.Text = "CLIENT"
-        '
-        'RibbonPageGroup2
-        '
-        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarButtonItem7)
-        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarButtonItem8)
-        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarButtonItem9)
-        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarButtonItem11)
-        Me.RibbonPageGroup2.Name = "RibbonPageGroup2"
-        Me.RibbonPageGroup2.Text = "Menu Client"
-        '
-        'RibbonPage2
-        '
-        Me.RibbonPage2.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup3})
-        Me.RibbonPage2.Name = "RibbonPage2"
-        Me.RibbonPage2.Text = "REPORT"
-        '
-        'RibbonPage1
-        '
-        Me.RibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup1})
-        Me.RibbonPage1.Name = "RibbonPage1"
-        Me.RibbonPage1.Text = "MASTER"
-        '
-        'RibbonPageGroup1
-        '
-        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem1)
-        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem2)
-        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem3)
-        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem4)
-        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem5)
-        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem6)
-        Me.RibbonPageGroup1.Name = "RibbonPageGroup1"
-        ToolTipTitleItem8.Appearance.Image = Global.Gudang_Toko_Elektronik.My.Resources.Resources.button_gudang
-        ToolTipTitleItem8.Appearance.Options.UseImage = True
-        ToolTipTitleItem8.Image = Global.Gudang_Toko_Elektronik.My.Resources.Resources.button_gudang
-        SuperToolTip8.Items.Add(ToolTipTitleItem8)
-        Me.RibbonPageGroup1.SuperTip = SuperToolTip8
-        Me.RibbonPageGroup1.Text = "Menu Administrator"
+        Me.RibbonControl.ExpandCollapseItem.Id = 0
+        Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem, Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.BarButtonItem12, Me.BarButtonItem11})
+        Me.RibbonControl.Location = New System.Drawing.Point(0, 0)
+        Me.RibbonControl.MaxItemId = 15
+        Me.RibbonControl.Name = "RibbonControl"
+        Me.RibbonControl.PageCategories.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageCategory() {Me.RibbonPageCategory1, Me.RibbonPageCategory2})
+        Me.RibbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage1, Me.RibbonPage2, Me.CLIENT})
+        Me.RibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice
+        Me.RibbonControl.Size = New System.Drawing.Size(871, 130)
+        Me.RibbonControl.StatusBar = Me.RibbonStatusBar
         '
         'BarButtonItem1
         '
@@ -179,26 +139,6 @@ Partial Class FrmMenuAdministrator1
         Me.BarButtonItem9.LargeGlyph = CType(resources.GetObject("BarButtonItem9.LargeGlyph"), System.Drawing.Image)
         Me.BarButtonItem9.Name = "BarButtonItem9"
         '
-        'RibbonControl
-        '
-        Me.RibbonControl.ExpandCollapseItem.Id = 0
-        Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem, Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.BarButtonItem12, Me.BarButtonItem11})
-        Me.RibbonControl.Location = New System.Drawing.Point(0, 0)
-        Me.RibbonControl.MaxItemId = 15
-        Me.RibbonControl.Name = "RibbonControl"
-        Me.RibbonControl.PageCategories.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageCategory() {Me.RibbonPageCategory1, Me.RibbonPageCategory2})
-        Me.RibbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage1, Me.RibbonPage2, Me.CLIENT})
-        Me.RibbonControl.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice
-        Me.RibbonControl.Size = New System.Drawing.Size(871, 130)
-        Me.RibbonControl.StatusBar = Me.RibbonStatusBar
-        '
-        'RibbonPageGroup3
-        '
-        Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem10)
-        Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem12)
-        Me.RibbonPageGroup3.Name = "RibbonPageGroup3"
-        Me.RibbonPageGroup3.Text = "RibbonPageGroup3"
-        '
         'BarButtonItem10
         '
         Me.BarButtonItem10.Caption = "Transaksi Keluar"
@@ -223,18 +163,81 @@ Partial Class FrmMenuAdministrator1
         Me.BarButtonItem11.LargeGlyph = CType(resources.GetObject("BarButtonItem11.LargeGlyph"), System.Drawing.Image)
         Me.BarButtonItem11.Name = "BarButtonItem11"
         '
+        'RibbonPageCategory1
+        '
+        Me.RibbonPageCategory1.Name = "RibbonPageCategory1"
+        Me.RibbonPageCategory1.Text = "RibbonPageCategory1"
+        '
+        'RibbonPageCategory2
+        '
+        Me.RibbonPageCategory2.Name = "RibbonPageCategory2"
+        Me.RibbonPageCategory2.Text = "RibbonPageCategory2"
+        '
+        'RibbonPage1
+        '
+        Me.RibbonPage1.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup1})
+        Me.RibbonPage1.Name = "RibbonPage1"
+        Me.RibbonPage1.Text = "MASTER"
+        '
+        'RibbonPageGroup1
+        '
+        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem1)
+        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem2)
+        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem3)
+        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem4)
+        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem5)
+        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem6)
+        Me.RibbonPageGroup1.Name = "RibbonPageGroup1"
+        ToolTipTitleItem1.Appearance.Image = Global.Gudang_Toko_Elektronik.My.Resources.Resources.button_gudang
+        ToolTipTitleItem1.Appearance.Options.UseImage = True
+        ToolTipTitleItem1.Image = Global.Gudang_Toko_Elektronik.My.Resources.Resources.button_gudang
+        SuperToolTip1.Items.Add(ToolTipTitleItem1)
+        Me.RibbonPageGroup1.SuperTip = SuperToolTip1
+        Me.RibbonPageGroup1.Text = "Menu Administrator"
+        '
+        'RibbonPage2
+        '
+        Me.RibbonPage2.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup3})
+        Me.RibbonPage2.Name = "RibbonPage2"
+        Me.RibbonPage2.Text = "REPORT"
+        '
+        'RibbonPageGroup3
+        '
+        Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem10)
+        Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem12)
+        Me.RibbonPageGroup3.Name = "RibbonPageGroup3"
+        Me.RibbonPageGroup3.Text = "Laporan"
+        '
+        'CLIENT
+        '
+        Me.CLIENT.Groups.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageGroup() {Me.RibbonPageGroup2})
+        Me.CLIENT.Name = "CLIENT"
+        Me.CLIENT.Text = "CLIENT"
+        '
+        'RibbonPageGroup2
+        '
+        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarButtonItem7)
+        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarButtonItem8)
+        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarButtonItem9)
+        Me.RibbonPageGroup2.ItemLinks.Add(Me.BarButtonItem11)
+        Me.RibbonPageGroup2.Name = "RibbonPageGroup2"
+        Me.RibbonPageGroup2.Text = "Menu Client"
+        '
         'FrmMenuAdministrator1
         '
+        Me.Appearance.BackColor = System.Drawing.Color.White
+        Me.Appearance.Options.UseBackColor = True
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(871, 449)
         Me.Controls.Add(Me.RibbonStatusBar)
         Me.Controls.Add(Me.RibbonControl)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.Name = "FrmMenuAdministrator1"
         Me.Ribbon = Me.RibbonControl
         Me.StatusBar = Me.RibbonStatusBar
-        Me.Text = "FrmMenuAdministrator1"
+        Me.Text = "Main Menu"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         CType(Me.RibbonControl, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

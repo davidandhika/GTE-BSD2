@@ -11,7 +11,6 @@
     Public frmMasterOpname As Opname
     Public frmCetakSuratJalan As FormCetakSuratJalan
     Public frmLaporanTransKeluar As FrmRptTransKeluar
-    ' Public frmLaporanTransMasuk As 
     Public frmLaporanOpname As FrmRptOpname
     Public ds As DataSetSJ
 
@@ -29,6 +28,8 @@
     End Function
 
     Private Sub FrmMenuAdministrator1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        splashscreen.Close()
+
         childNumber = 0
         BarButtonItem1.Enabled = True
         BarButtonItem2.Enabled = True
@@ -99,7 +100,12 @@
     Private Sub FrmMenuAdministrator1_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
         ' Application.Exit()
         'Me.Close()
+        conn.Close()
         Login.Show()
+        Login.username_txt.Text = ""
+        Login.pass_txt.Text = ""
+        Login.username_txt.Focus()
+
     End Sub
 
     Private Sub BarButtonItem10_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem10.ItemClick

@@ -329,6 +329,12 @@
     <Compile Include="Client\Search.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="splashscreen.designer.vb">
+      <DependentUpon>splashscreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="splashscreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Client\FormCetakSuratJalan.resx">
@@ -437,6 +443,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Client\Search.resx">
       <DependentUpon>Search.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splashscreen.resx">
+      <DependentUpon>splashscreen.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
