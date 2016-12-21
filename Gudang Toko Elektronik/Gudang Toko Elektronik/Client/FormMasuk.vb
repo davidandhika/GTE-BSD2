@@ -130,12 +130,13 @@ Public Class FormMasuk
             'cmdheader.Parameters.Add(":tgl", tgl_lbl.Text)
             cmdheader.ExecuteNonQuery()
             trans.Commit()
-            ds.Clear()
+            'Dslengkap.Clear()
             MsgBox("Simpan transaksi berhasil")
         Catch ex As Exception
             MsgBox(ex.Message)
             trans.Rollback()
         End Try
+        ds1.Clear()
         clearHeader()
         clearDetail()
     End Sub
