@@ -32,6 +32,13 @@ Partial Class FormKeluar
         Me.delete_btn = New System.Windows.Forms.Button()
         Me.save_btn = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.KdtranskeluarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.KdbarangDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NamaBarang = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.JumlahDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.KondisiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.DetailkeluarBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.Dslengkap = New Gudang_Toko_Elektronik.Dslengkap()
         Me.noSuratJalan_txt = New System.Windows.Forms.TextBox()
         Me.kondisi_cb = New System.Windows.Forms.ComboBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -45,17 +52,10 @@ Partial Class FormKeluar
         Me.search_btn = New System.Windows.Forms.Button()
         Me.kdbarang_txt = New System.Windows.Forms.TextBox()
         Me.insert_btn = New System.Windows.Forms.Button()
-        Me.Dslengkap = New Gudang_Toko_Elektronik.Dslengkap()
-        Me.DetailkeluarBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.KdtranskeluarDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KdbarangDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.NamaBarang = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.JumlahDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.KondisiDataGridViewTextBoxColumn = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.jumlah_txt, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DetailkeluarBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.jumlah_txt, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'txtKodeGudang
@@ -126,14 +126,60 @@ Partial Class FormKeluar
         'DataGridView1
         '
         Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.AutoGenerateColumns = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.KdtranskeluarDataGridViewTextBoxColumn, Me.KdbarangDataGridViewTextBoxColumn, Me.NamaBarang, Me.JumlahDataGridViewTextBoxColumn, Me.KondisiDataGridViewTextBoxColumn})
         Me.DataGridView1.DataSource = Me.DetailkeluarBindingSource
         Me.DataGridView1.Location = New System.Drawing.Point(316, 149)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(321, 171)
         Me.DataGridView1.TabIndex = 71
+        '
+        'KdtranskeluarDataGridViewTextBoxColumn
+        '
+        Me.KdtranskeluarDataGridViewTextBoxColumn.DataPropertyName = "kdtranskeluar"
+        Me.KdtranskeluarDataGridViewTextBoxColumn.HeaderText = "kdtranskeluar"
+        Me.KdtranskeluarDataGridViewTextBoxColumn.Name = "KdtranskeluarDataGridViewTextBoxColumn"
+        Me.KdtranskeluarDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'KdbarangDataGridViewTextBoxColumn
+        '
+        Me.KdbarangDataGridViewTextBoxColumn.DataPropertyName = "kdbarang"
+        Me.KdbarangDataGridViewTextBoxColumn.HeaderText = "kdbarang"
+        Me.KdbarangDataGridViewTextBoxColumn.Name = "KdbarangDataGridViewTextBoxColumn"
+        Me.KdbarangDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'NamaBarang
+        '
+        Me.NamaBarang.HeaderText = "Nama Barang"
+        Me.NamaBarang.Name = "NamaBarang"
+        Me.NamaBarang.ReadOnly = True
+        '
+        'JumlahDataGridViewTextBoxColumn
+        '
+        Me.JumlahDataGridViewTextBoxColumn.DataPropertyName = "jumlah"
+        Me.JumlahDataGridViewTextBoxColumn.HeaderText = "jumlah"
+        Me.JumlahDataGridViewTextBoxColumn.Name = "JumlahDataGridViewTextBoxColumn"
+        Me.JumlahDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'KondisiDataGridViewTextBoxColumn
+        '
+        Me.KondisiDataGridViewTextBoxColumn.DataPropertyName = "kondisi"
+        Me.KondisiDataGridViewTextBoxColumn.HeaderText = "kondisi"
+        Me.KondisiDataGridViewTextBoxColumn.Name = "KondisiDataGridViewTextBoxColumn"
+        Me.KondisiDataGridViewTextBoxColumn.ReadOnly = True
+        '
+        'DetailkeluarBindingSource
+        '
+        Me.DetailkeluarBindingSource.DataMember = "detail_keluar"
+        Me.DetailkeluarBindingSource.DataSource = Me.Dslengkap
+        '
+        'Dslengkap
+        '
+        Me.Dslengkap.DataSetName = "Dslengkap"
+        Me.Dslengkap.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'noSuratJalan_txt
         '
@@ -264,45 +310,6 @@ Partial Class FormKeluar
         Me.insert_btn.TabIndex = 58
         Me.insert_btn.UseVisualStyleBackColor = True
         '
-        'Dslengkap
-        '
-        Me.Dslengkap.DataSetName = "Dslengkap"
-        Me.Dslengkap.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
-        '
-        'DetailkeluarBindingSource
-        '
-        Me.DetailkeluarBindingSource.DataMember = "detail_keluar"
-        Me.DetailkeluarBindingSource.DataSource = Me.Dslengkap
-        '
-        'KdtranskeluarDataGridViewTextBoxColumn
-        '
-        Me.KdtranskeluarDataGridViewTextBoxColumn.DataPropertyName = "kdtranskeluar"
-        Me.KdtranskeluarDataGridViewTextBoxColumn.HeaderText = "kdtranskeluar"
-        Me.KdtranskeluarDataGridViewTextBoxColumn.Name = "KdtranskeluarDataGridViewTextBoxColumn"
-        '
-        'KdbarangDataGridViewTextBoxColumn
-        '
-        Me.KdbarangDataGridViewTextBoxColumn.DataPropertyName = "kdbarang"
-        Me.KdbarangDataGridViewTextBoxColumn.HeaderText = "kdbarang"
-        Me.KdbarangDataGridViewTextBoxColumn.Name = "KdbarangDataGridViewTextBoxColumn"
-        '
-        'NamaBarang
-        '
-        Me.NamaBarang.HeaderText = "Nama Barang"
-        Me.NamaBarang.Name = "NamaBarang"
-        '
-        'JumlahDataGridViewTextBoxColumn
-        '
-        Me.JumlahDataGridViewTextBoxColumn.DataPropertyName = "jumlah"
-        Me.JumlahDataGridViewTextBoxColumn.HeaderText = "jumlah"
-        Me.JumlahDataGridViewTextBoxColumn.Name = "JumlahDataGridViewTextBoxColumn"
-        '
-        'KondisiDataGridViewTextBoxColumn
-        '
-        Me.KondisiDataGridViewTextBoxColumn.DataPropertyName = "kondisi"
-        Me.KondisiDataGridViewTextBoxColumn.HeaderText = "kondisi"
-        Me.KondisiDataGridViewTextBoxColumn.Name = "KondisiDataGridViewTextBoxColumn"
-        '
         'FormKeluar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -336,9 +343,9 @@ Partial Class FormKeluar
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormKeluar"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.jumlah_txt, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DetailkeluarBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Dslengkap, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.jumlah_txt, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

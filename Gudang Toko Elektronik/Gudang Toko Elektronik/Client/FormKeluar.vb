@@ -4,6 +4,8 @@ Public Class FormKeluar
     Dim da As OracleDataAdapter
     Dim selectedindex As Integer
     Dim dr As OracleDataReader
+    Public temp_stok As Integer
+    Public temp_stok_SISA As Integer
     Sub clearHeader()
         noSuratJalan_txt.Text = ""
         gudang_cb.Text = "--pilih--"
@@ -34,7 +36,6 @@ Public Class FormKeluar
                 rak_cb.Items.Add(dr(0))
             End While
             dr.Close()
-
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -43,18 +44,25 @@ Public Class FormKeluar
 
     Private Sub insert_btn_Click(sender As Object, e As EventArgs) Handles insert_btn.Click
 
+        If jumlah_txt.Value > temp_stok Then
+            MsgBox("Stok Gak Cukup!" & vbNewLine & "Sisah Stok:" & temp_stok.ToString)
+        Else
+            temp_stok_SISA = temp_stok - jumlah_txt.Value
+            MsgBox("Stok Awal:" & temp_stok.ToString & vbNewLine & "BerKurang:" & jumlah_txt.Text & vbNewLine & "Sisa Stok:" & temp_stok_SISA)
+            Dim dt As Dslengkap.detail_keluarDataTable = Dslengkap.detail_keluar
+            Dim dr As Dslengkap.detail_keluarRow = dt.NewRow
+            dr.kdtranskeluar = noSuratJalan_txt.Text
+            dr.kdbarang = kdbarang_txt.Text
+            dr.kondisi = kondisi_cb.Text
+            dr.jumlah = jumlah_txt.Value
 
-        Dim dt As Dslengkap.detail_keluarDataTable = Dslengkap.detail_keluar
-        Dim dr As Dslengkap.detail_keluarRow = dt.NewRow
-        dr.kdtranskeluar = noSuratJalan_txt.Text
-        dr.kdbarang = kdbarang_txt.Text
-        dr.kondisi = kondisi_cb.Text
-        dr.jumlah = jumlah_txt.Value
+            dt.Rows.Add(dr)
 
-        dt.Rows.Add(dr)
-        DataGridView1.Rows(DataGridView1.RowCount - 1).Cells(2).Value = nmBarang_txt.Text
+            DataGridView1.Rows(DataGridView1.RowCount - 1).Cells(2).Value = nmBarang_txt.Text
 
-        clearDetail()
+            clearDetail()
+        End If
+        
     End Sub
 
     Private Sub save_btn_Click(sender As Object, e As EventArgs) Handles save_btn.Click

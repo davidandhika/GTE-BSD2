@@ -22,6 +22,7 @@ Public Class Search_FormKeluar
         If barisdgv >= 0 Then
             FrmMenuAdministrator1.frmKeluar.kdbarang_txt.Text = DataGridView1.Item(0, barisdgv).Value
             FrmMenuAdministrator1.frmKeluar.nmBarang_txt.Text = DataGridView1.Item(1, barisdgv).Value
+            FrmMenuAdministrator1.frmKeluar.temp_stok = DataGridView1.Item(5, barisdgv).Value
         End If
         Me.Close()
     End Sub
