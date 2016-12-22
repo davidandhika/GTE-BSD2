@@ -48,7 +48,7 @@ Public Class FormKeluar
             MsgBox("Stok Gak Cukup!" & vbNewLine & "Sisah Stok:" & temp_stok.ToString)
         Else
             temp_stok_SISA = temp_stok - jumlah_txt.Value
-            MsgBox("Stok Awal:" & temp_stok.ToString & vbNewLine & "BerKurang:" & jumlah_txt.Text & vbNewLine & "Sisa Stok:" & temp_stok_SISA)
+            'MsgBox("Stok Awal:" & temp_stok.ToString & vbNewLine & "BerKurang:" & jumlah_txt.Text & vbNewLine & "Sisa Stok:" & temp_stok_SISA)
             Dim dt As Dslengkap.detail_keluarDataTable = Dslengkap.detail_keluar
             Dim dr As Dslengkap.detail_keluarRow = dt.NewRow
             dr.kdtranskeluar = noSuratJalan_txt.Text

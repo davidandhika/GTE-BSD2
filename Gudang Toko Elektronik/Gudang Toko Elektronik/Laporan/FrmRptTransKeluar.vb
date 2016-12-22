@@ -5,6 +5,8 @@ Public Class FrmRptTransKeluar
         ' Me. = FormWindowState.Maximized
         Dim rpt As New rptTransKeluar
         'rpt.Load("E:\Semester Pendek 4-5\Client - Server\Proyek\Gudang Toko Elektronik\Gudang Toko Elektronik\Report\rptTransKeluar.rpt")
+        rpt.Refresh()
+        rpt.SetDatabaseLogon("DAVID", "DAVID")
         CrystalReportViewer1.ReportSource = rpt
     End Sub
 End Class
