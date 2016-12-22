@@ -11,6 +11,8 @@
     Public frmMasterOpname As Opname
     Public frmCetakSuratJalan As FormCetakSuratJalan
     Public frmLaporanTransKeluar As FrmRptTransKeluar
+    Public frmLaporanTransMasuk As FrmRptMasuk
+    Public frmLaporanBarang As FrmRptBarang
     Public frmLaporanOpname As FrmRptOpname
     Public ds As DataSetSJ
 
@@ -170,5 +172,23 @@
         '    childNumber += 1
         'End If
         FormCetakSuratJalan.Show()
+    End Sub
+
+    Private Sub BarButtonItem13_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem13.ItemClick
+        If IsOpen("FrmRptBarang") = False Then
+            frmLaporanBarang = New FrmRptBarang
+            frmLaporanBarang.MdiParent = Me
+            frmLaporanBarang.Show()
+            childNumber += 1
+        End If
+    End Sub
+
+    Private Sub BarButtonItem14_ItemClick(sender As Object, e As DevExpress.XtraBars.ItemClickEventArgs) Handles BarButtonItem14.ItemClick
+        If IsOpen("FrmRptMasuk") = False Then
+            frmLaporanTransMasuk = New FrmRptMasuk
+            frmLaporanTransMasuk.MdiParent = Me
+            frmLaporanTransMasuk.Show()
+            childNumber += 1
+        End If
     End Sub
 End Class

@@ -36,6 +36,8 @@ Partial Class FrmMenuAdministrator1
         Me.BarButtonItem10 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem12 = New DevExpress.XtraBars.BarButtonItem()
         Me.BarButtonItem11 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem13 = New DevExpress.XtraBars.BarButtonItem()
+        Me.BarButtonItem14 = New DevExpress.XtraBars.BarButtonItem()
         Me.RibbonPageCategory1 = New DevExpress.XtraBars.Ribbon.RibbonPageCategory()
         Me.RibbonPageCategory2 = New DevExpress.XtraBars.Ribbon.RibbonPageCategory()
         Me.RibbonPage1 = New DevExpress.XtraBars.Ribbon.RibbonPage()
@@ -57,9 +59,9 @@ Partial Class FrmMenuAdministrator1
         'RibbonControl
         '
         Me.RibbonControl.ExpandCollapseItem.Id = 0
-        Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem, Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.BarButtonItem12, Me.BarButtonItem11})
+        Me.RibbonControl.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.RibbonControl.ExpandCollapseItem, Me.BarButtonItem1, Me.BarButtonItem2, Me.BarButtonItem3, Me.BarButtonItem4, Me.BarButtonItem5, Me.BarButtonItem6, Me.BarButtonItem7, Me.BarButtonItem8, Me.BarButtonItem9, Me.BarButtonItem10, Me.BarButtonItem12, Me.BarButtonItem11, Me.BarButtonItem13, Me.BarButtonItem14})
         Me.RibbonControl.Location = New System.Drawing.Point(0, 0)
-        Me.RibbonControl.MaxItemId = 15
+        Me.RibbonControl.MaxItemId = 17
         Me.RibbonControl.Name = "RibbonControl"
         Me.RibbonControl.PageCategories.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPageCategory() {Me.RibbonPageCategory1, Me.RibbonPageCategory2})
         Me.RibbonControl.Pages.AddRange(New DevExpress.XtraBars.Ribbon.RibbonPage() {Me.RibbonPage1, Me.RibbonPage2, Me.CLIENT})
@@ -163,6 +165,20 @@ Partial Class FrmMenuAdministrator1
         Me.BarButtonItem11.LargeGlyph = CType(resources.GetObject("BarButtonItem11.LargeGlyph"), System.Drawing.Image)
         Me.BarButtonItem11.Name = "BarButtonItem11"
         '
+        'BarButtonItem13
+        '
+        Me.BarButtonItem13.Caption = "Barang"
+        Me.BarButtonItem13.Id = 15
+        Me.BarButtonItem13.LargeGlyph = CType(resources.GetObject("BarButtonItem13.LargeGlyph"), System.Drawing.Image)
+        Me.BarButtonItem13.Name = "BarButtonItem13"
+        '
+        'BarButtonItem14
+        '
+        Me.BarButtonItem14.Caption = "Transaksi Masuk"
+        Me.BarButtonItem14.Id = 16
+        Me.BarButtonItem14.LargeGlyph = CType(resources.GetObject("BarButtonItem14.LargeGlyph"), System.Drawing.Image)
+        Me.BarButtonItem14.Name = "BarButtonItem14"
+        '
         'RibbonPageCategory1
         '
         Me.RibbonPageCategory1.Name = "RibbonPageCategory1"
@@ -203,6 +219,8 @@ Partial Class FrmMenuAdministrator1
         '
         'RibbonPageGroup3
         '
+        Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem13)
+        Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem14)
         Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem10)
         Me.RibbonPageGroup3.ItemLinks.Add(Me.BarButtonItem12)
         Me.RibbonPageGroup3.Name = "RibbonPageGroup3"
@@ -267,6 +285,8 @@ Partial Class FrmMenuAdministrator1
     Friend WithEvents RibbonPageGroup2 As DevExpress.XtraBars.Ribbon.RibbonPageGroup
     Friend WithEvents BarButtonItem12 As DevExpress.XtraBars.BarButtonItem
     Friend WithEvents BarButtonItem11 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem13 As DevExpress.XtraBars.BarButtonItem
+    Friend WithEvents BarButtonItem14 As DevExpress.XtraBars.BarButtonItem
 
 
 End Class

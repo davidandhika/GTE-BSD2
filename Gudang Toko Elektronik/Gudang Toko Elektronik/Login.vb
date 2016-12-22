@@ -35,4 +35,10 @@
             login()
         End If
     End Sub
+
+    Private Sub username_txt_KeyPress(sender As Object, e As KeyPressEventArgs) Handles username_txt.KeyPress
+        If (e.KeyChar = Chr(13)) Then
+            pass_txt.Focus()
+        End If
+    End Sub
 End Class

@@ -162,11 +162,17 @@
     <Compile Include="Dslengkap.vb">
       <DependentUpon>Dslengkap.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Laporan\CrystalReport1.vb">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReport1.rpt</DependentUpon>
-      <SubType>Component</SubType>
+    <Compile Include="Laporan\FrmRptBarang.designer.vb">
+      <DependentUpon>FrmRptBarang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\FrmRptBarang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\FrmRptMasuk.designer.vb">
+      <DependentUpon>FrmRptMasuk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Laporan\FrmRptMasuk.vb">
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="Laporan\FrmRptTransKeluar.designer.vb">
       <DependentUpon>FrmRptTransKeluar.vb</DependentUpon>
@@ -179,6 +185,12 @@
     </Compile>
     <Compile Include="Laporan\FrmRptOpname.vb">
       <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Laporan\rptBarang.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptBarang.rpt</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Laporan\rptOpname.vb">
       <AutoGen>True</AutoGen>
@@ -202,6 +214,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptTransKeluar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Laporan\rptTransMasuk.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptTransMasuk.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Master\FrmBrowseGudang.designer.vb">
@@ -358,15 +376,21 @@
     <EmbeddedResource Include="Client\Search_Masuk.resx">
       <DependentUpon>Search_Masuk.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Laporan\CrystalReport1.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReport1.vb</LastGenOutput>
+    <EmbeddedResource Include="Laporan\FrmRptBarang.resx">
+      <DependentUpon>FrmRptBarang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\FrmRptMasuk.resx">
+      <DependentUpon>FrmRptMasuk.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\FrmRptTransKeluar.resx">
       <DependentUpon>FrmRptTransKeluar.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\FrmRptOpname.resx">
       <DependentUpon>FrmRptOpname.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\rptBarang.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptBarang.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Laporan\rptOpname.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
@@ -382,6 +406,10 @@
     <EmbeddedResource Include="Laporan\rptTransKeluar.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptTransKeluar.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Laporan\rptTransMasuk.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptTransMasuk.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Master\FrmBrowseGudang.resx">
       <DependentUpon>FrmBrowseGudang.vb</DependentUpon>
