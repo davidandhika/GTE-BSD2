@@ -10,11 +10,13 @@ Public Class FrmPindahRak
 
     Sub dataComboBox()
         cmbKodeType.Items.Clear()
-        cmd.CommandText = "select KDBARANG, NMBARANG from BARANG"
+        cmd.CommandText = "select NMBARANG from BARANG"
         rd = cmd.ExecuteReader
         While rd.Read
             cmbKodeType.Items.Add(rd(0))
         End While
+
+
         rd.Close()
     End Sub
 
@@ -26,7 +28,6 @@ Public Class FrmPindahRak
         rd = cmd.ExecuteReader
         While rd.Read
             RAK_CB.Items.Add(rd(0))
-
         End While
         rd.Close()
     End Sub
@@ -36,6 +37,8 @@ Public Class FrmPindahRak
         Label1.Text = Date.Today.ToString("dd-MMM-yy")
         dataComboBox()
         dataComboBoxRak()
+        cmbKodeType.Text = "-- pilih --"
+        RAK_CB.Text = "-- pilih --"
     End Sub
 
     Private Sub btnBrowse_Click(sender As Object, e As EventArgs) Handles btnBrowse.Click
@@ -95,17 +98,17 @@ Public Class FrmPindahRak
         Me.Close()
     End Sub
 
-    Private Sub lblKodeRak_Click(sender As Object, e As EventArgs) Handles lblKodeRak.Click
-
-    End Sub
+ 
 
     Private Sub cmbKodeType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbKodeType.SelectedIndexChanged
         Dim comboType As New OracleCommand("", conn)
-        comboType.CommandText = "select NMBARANG FROM barang where NMBARANG='" & cmbKodeType.Text & "'"
+        comboType.CommandText = "select KDBARANG FROM barang where KDBARANG='" & cmbKodeType.Text & "'"
         rd = comboType.ExecuteReader
         While rd.Read
             txtKodebarang.Text = rd(0)
         End While
         rd.Close()
     End Sub
+
+    
 End Class

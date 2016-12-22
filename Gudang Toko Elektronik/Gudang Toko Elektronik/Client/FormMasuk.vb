@@ -161,4 +161,7 @@ Public Class FormMasuk
     '    dr.Close()
     'End Sub
 
+    Private Sub txtKodeGudang_TextChanged(sender As Object, e As EventArgs) Handles txtKodeGudang.TextChanged
+
+    End Sub
 End Class
