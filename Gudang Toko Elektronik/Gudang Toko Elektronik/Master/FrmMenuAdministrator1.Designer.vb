@@ -198,9 +198,9 @@ Partial Class FrmMenuAdministrator1
         'RibbonPageGroup1
         '
         Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem1)
+        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem4)
         Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem2)
         Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem3)
-        Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem4)
         Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem5)
         Me.RibbonPageGroup1.ItemLinks.Add(Me.BarButtonItem6)
         Me.RibbonPageGroup1.Name = "RibbonPageGroup1"

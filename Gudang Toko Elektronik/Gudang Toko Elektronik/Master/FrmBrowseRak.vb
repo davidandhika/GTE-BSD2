@@ -12,6 +12,7 @@ Public Class FrmBrowseRak
             .Columns(0).HeaderCell.Value = "KODE RAK"
             .Columns(1).HeaderCell.Value = "KODE TYPE"
             .Columns(2).HeaderCell.Value = "NAMA TYPE"
+            .Columns(2).Width = 200
         End With
     End Sub
     Sub cari()
@@ -24,6 +25,7 @@ Public Class FrmBrowseRak
             .Columns(0).HeaderCell.Value = "KODE RAK"
             .Columns(1).HeaderCell.Value = "KODE TYPE"
             .Columns(2).HeaderCell.Value = "NAMA TYPE"
+            .Columns(2).Width = 200
         End With
     End Sub
     Private Sub FrmBrowseRak_Load(sender As Object, e As EventArgs) Handles MyBase.Load
