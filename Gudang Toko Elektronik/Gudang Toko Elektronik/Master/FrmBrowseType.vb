@@ -11,6 +11,7 @@ Public Class FrmBrowseType
             .DataSource = ds.Tables(0)
             .Columns(0).HeaderCell.Value = "KODE TYPE"
             .Columns(1).HeaderCell.Value = "NAMA TYPE"
+            .Columns(1).Width = 200
         End With
     End Sub
     Sub cari()
@@ -22,6 +23,7 @@ Public Class FrmBrowseType
             .DataSource = ds.Tables(0)
             .Columns(0).HeaderCell.Value = "KODE TYPE"
             .Columns(1).HeaderCell.Value = "NAMA TYPE"
+            .Columns(1).Width = 200
         End With
     End Sub
     Private Sub TextBox1_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox1.KeyPress
